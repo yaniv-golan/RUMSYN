@@ -1,0 +1,14 @@
+name: Bug
+about: Describe observable behavior with reproduction steps
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and expected/actual behavior
+      description: Include dimensions and units where relevant. Do not upload credentials, addresses or private room files.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: App version, browser and device

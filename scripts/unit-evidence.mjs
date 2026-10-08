@@ -1,0 +1,20 @@
+import {execFileSync} from 'node:child_process';
+import {mkdirSync,readFileSync,writeFileSync,rmSync,existsSync,renameSync} from 'node:fs';
+import {candidateIdentity} from './identity.mjs';
+import {digest} from './gate.mjs';
+mkdirSync('artifacts',{recursive:true});
+const attempt=`artifacts/unit-attempts/${Date.now()}`;mkdirSync(attempt,{recursive:true});
+for(const file of ['unit-evidence.json','unit-report.json','unit-latest-status.json'])if(existsSync(`artifacts/${file}`))renameSync(`artifacts/${file}`,`${attempt}/${file}`);
+let produced=false;writeFileSync('artifacts/unit-latest-status.json',JSON.stringify({outcome:'running',started:new Date().toISOString()}));
+process.on('exit',code=>writeFileSync('artifacts/unit-latest-status.json',JSON.stringify({outcome:code===0&&produced?'pass':'fail',finished:new Date().toISOString()})));
+const before=candidateIdentity();if(!before.buildFiles.length)throw new Error('Build artifact absent; run pnpm build before source-bound tests');mkdirSync('artifacts',{recursive:true});
+rmSync('artifacts/unit-report.json',{force:true});
+let exit=0;try{execFileSync(process.execPath,['node_modules/vitest/vitest.mjs','run'],{stdio:'inherit'});}catch(error){exit=error.status??1;}
+const after=candidateIdentity();if(before.sourceDigest!==after.sourceDigest||before.buildDigest!==after.buildDigest)throw new Error('Candidate changed while tests were running');
+if(!existsSync('artifacts/unit-report.json'))throw new Error('Actual runner report missing; no evidence may be claimed');
+const raw=readFileSync('artifacts/unit-report.json');const report=JSON.parse(raw);
+const declared=JSON.parse(readFileSync('tests/case-inventory.json')).cases;
+const observed=report.testResults.flatMap(r=>r.assertionResults);
+if(!observed.length || new Set(observed.map(c=>c.fullName)).size!==observed.length || JSON.stringify(observed.map(c=>c.fullName).sort())!==JSON.stringify([...declared].sort()))throw new Error('Actual report differs from independent required case inventory');
+if(observed.some(c=>c.status!=='passed'))exit=1;
+writeFileSync('artifacts/unit-evidence.json',JSON.stringify({candidate:before,node:process.version,command:'pnpm test:unit',runnerReportDigest:digest(raw),cases:report.testResults.flatMap(r=>r.assertionResults.map(a=>({id:a.fullName,outcome:a.status==='passed'?'pass':a.status==='pending'?'skip':'fail'}))),outcome:exit?'fail':'pass'},null,2));produced=true;process.exitCode=exit;

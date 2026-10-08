@@ -1,0 +1,3756 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "proposed-awaiting-manager-review",
+  "obligations": [
+    {
+      "id": "R001.contract",
+      "requirement": "R001",
+      "release": "v1",
+      "milestone": "M1",
+      "expected": "Create/edit/save one room without an account or application backend; production artifact works on static HTTPS hosting.",
+      "retirement": null
+    },
+    {
+      "id": "R002.contract",
+      "requirement": "R002",
+      "release": "v1",
+      "milestone": "M7",
+      "expected": "Complete required modeling operations on desktop mouse/keyboard and real iPad/Android tablet touch.",
+      "retirement": null
+    },
+    {
+      "id": "R002.desktop-mouse",
+      "requirement": "R002",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "desktop-mouse",
+      "view": null,
+      "expected": "Complete required modeling operations on desktop mouse/keyboard and real iPad/Android tablet touch. Explicitly exercise desktop-mouse.",
+      "retirement": null
+    },
+    {
+      "id": "R002.desktop-keyboard",
+      "requirement": "R002",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "desktop-keyboard",
+      "view": null,
+      "expected": "Complete required modeling operations on desktop mouse/keyboard and real iPad/Android tablet touch. Explicitly exercise desktop-keyboard.",
+      "retirement": null
+    },
+    {
+      "id": "R002.ipad-touch",
+      "requirement": "R002",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "ipad-touch",
+      "view": null,
+      "expected": "Complete required modeling operations on desktop mouse/keyboard and real iPad/Android tablet touch. Explicitly exercise ipad-touch.",
+      "retirement": null
+    },
+    {
+      "id": "R002.android-tablet-touch",
+      "requirement": "R002",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "android-tablet-touch",
+      "view": null,
+      "expected": "Complete required modeling operations on desktop mouse/keyboard and real iPad/Android tablet touch. Explicitly exercise android-tablet-touch.",
+      "retirement": null
+    },
+    {
+      "id": "R003.contract",
+      "requirement": "R003",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Open a received project on iOS/Android and rotate, pan, zoom, and inspect it.",
+      "retirement": null
+    },
+    {
+      "id": "R003.ios-file-open",
+      "requirement": "R003",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "ios-file-open",
+      "view": null,
+      "expected": "Open a received project on iOS/Android and rotate, pan, zoom, and inspect it. Explicitly exercise ios-file-open.",
+      "retirement": null
+    },
+    {
+      "id": "R003.android-file-open",
+      "requirement": "R003",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "android-file-open",
+      "view": null,
+      "expected": "Open a received project on iOS/Android and rotate, pan, zoom, and inspect it. Explicitly exercise android-file-open.",
+      "retirement": null
+    },
+    {
+      "id": "R003.rotate",
+      "requirement": "R003",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "rotate",
+      "view": null,
+      "expected": "Open a received project on iOS/Android and rotate, pan, zoom, and inspect it. Explicitly exercise rotate.",
+      "retirement": null
+    },
+    {
+      "id": "R003.pan",
+      "requirement": "R003",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "pan",
+      "view": null,
+      "expected": "Open a received project on iOS/Android and rotate, pan, zoom, and inspect it. Explicitly exercise pan.",
+      "retirement": null
+    },
+    {
+      "id": "R003.zoom",
+      "requirement": "R003",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "zoom",
+      "view": null,
+      "expected": "Open a received project on iOS/Android and rotate, pan, zoom, and inspect it. Explicitly exercise zoom.",
+      "retirement": null
+    },
+    {
+      "id": "R003.inspect",
+      "requirement": "R003",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "inspect",
+      "view": null,
+      "expected": "Open a received project on iOS/Android and rotate, pan, zoom, and inspect it. Explicitly exercise inspect.",
+      "retirement": null
+    },
+    {
+      "id": "R004.contract",
+      "requirement": "R004",
+      "release": "v1",
+      "milestone": "M2",
+      "expected": "Preset editing, drawing/dimensioning, and wall-by-wall segment entry produce equivalent editable rooms.",
+      "retirement": null
+    },
+    {
+      "id": "R004.presets",
+      "requirement": "R004",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "presets",
+      "view": null,
+      "expected": "Preset editing, drawing/dimensioning, and wall-by-wall segment entry produce equivalent editable rooms. Explicitly exercise presets.",
+      "retirement": null
+    },
+    {
+      "id": "R004.draw-outline",
+      "requirement": "R004",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "draw-outline",
+      "view": null,
+      "expected": "Preset editing, drawing/dimensioning, and wall-by-wall segment entry produce equivalent editable rooms. Explicitly exercise draw-outline.",
+      "retirement": null
+    },
+    {
+      "id": "R004.perimeter-segments",
+      "requirement": "R004",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "perimeter-segments",
+      "view": null,
+      "expected": "Preset editing, drawing/dimensioning, and wall-by-wall segment entry produce equivalent editable rooms. Explicitly exercise perimeter-segments.",
+      "retirement": null
+    },
+    {
+      "id": "R004.interchangeability",
+      "requirement": "R004",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "interchangeability",
+      "view": null,
+      "expected": "Preset editing, drawing/dimensioning, and wall-by-wall segment entry produce equivalent editable rooms. Explicitly exercise interchangeability.",
+      "retirement": null
+    },
+    {
+      "id": "R005.contract",
+      "requirement": "R005",
+      "release": "v1",
+      "milestone": "M2",
+      "expected": "Preserve unequal opposing walls; edit angled/curved walls and alcoves without silently rectangularizing them.",
+      "retirement": null
+    },
+    {
+      "id": "R005.unequal-walls",
+      "requirement": "R005",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "unequal-walls",
+      "view": null,
+      "expected": "Preserve unequal opposing walls; edit angled/curved walls and alcoves without silently rectangularizing them. Explicitly exercise unequal-walls.",
+      "retirement": null
+    },
+    {
+      "id": "R005.angled",
+      "requirement": "R005",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "angled",
+      "view": null,
+      "expected": "Preserve unequal opposing walls; edit angled/curved walls and alcoves without silently rectangularizing them. Explicitly exercise angled.",
+      "retirement": null
+    },
+    {
+      "id": "R005.curved",
+      "requirement": "R005",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "curved",
+      "view": null,
+      "expected": "Preserve unequal opposing walls; edit angled/curved walls and alcoves without silently rectangularizing them. Explicitly exercise curved.",
+      "retirement": null
+    },
+    {
+      "id": "R005.alcove",
+      "requirement": "R005",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "alcove",
+      "view": null,
+      "expected": "Preserve unequal opposing walls; edit angled/curved walls and alcoves without silently rectangularizing them. Explicitly exercise alcove.",
+      "retirement": null
+    },
+    {
+      "id": "R005.reversed-winding",
+      "requirement": "R005",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "reversed-winding",
+      "view": null,
+      "expected": "Preserve unequal opposing walls; edit angled/curved walls and alcoves without silently rectangularizing them. Explicitly exercise reversed-winding.",
+      "retirement": null
+    },
+    {
+      "id": "R006.contract",
+      "requirement": "R006",
+      "release": "v1",
+      "milestone": "M2",
+      "expected": "Create columns, niches, stepped floors, sloped ceilings, and changing ceiling heights with editable dimensions.",
+      "retirement": null
+    },
+    {
+      "id": "R006.column",
+      "requirement": "R006",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "column",
+      "view": null,
+      "expected": "Create columns, niches, stepped floors, sloped ceilings, and changing ceiling heights with editable dimensions. Explicitly exercise column.",
+      "retirement": null
+    },
+    {
+      "id": "R006.niche",
+      "requirement": "R006",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "niche",
+      "view": null,
+      "expected": "Create columns, niches, stepped floors, sloped ceilings, and changing ceiling heights with editable dimensions. Explicitly exercise niche.",
+      "retirement": null
+    },
+    {
+      "id": "R006.stepped-floor",
+      "requirement": "R006",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "stepped-floor",
+      "view": null,
+      "expected": "Create columns, niches, stepped floors, sloped ceilings, and changing ceiling heights with editable dimensions. Explicitly exercise stepped-floor.",
+      "retirement": null
+    },
+    {
+      "id": "R006.slope",
+      "requirement": "R006",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "slope",
+      "view": null,
+      "expected": "Create columns, niches, stepped floors, sloped ceilings, and changing ceiling heights with editable dimensions. Explicitly exercise slope.",
+      "retirement": null
+    },
+    {
+      "id": "R006.changing-ceiling",
+      "requirement": "R006",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "changing-ceiling",
+      "view": null,
+      "expected": "Create columns, niches, stepped floors, sloped ceilings, and changing ceiling heights with editable dimensions. Explicitly exercise changing-ceiling.",
+      "retirement": null
+    },
+    {
+      "id": "R007.contract",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap.",
+      "retirement": null
+    },
+    {
+      "id": "R007.thickness",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "thickness",
+      "view": null,
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap. Explicitly exercise thickness.",
+      "retirement": null
+    },
+    {
+      "id": "R007.frame",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "frame",
+      "view": null,
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap. Explicitly exercise frame.",
+      "retirement": null
+    },
+    {
+      "id": "R007.architrave",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "architrave",
+      "view": null,
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap. Explicitly exercise architrave.",
+      "retirement": null
+    },
+    {
+      "id": "R007.panel",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "panel",
+      "view": null,
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap. Explicitly exercise panel.",
+      "retirement": null
+    },
+    {
+      "id": "R007.baseboard",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "baseboard",
+      "view": null,
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap. Explicitly exercise baseboard.",
+      "retirement": null
+    },
+    {
+      "id": "R007.cornice",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "cornice",
+      "view": null,
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap. Explicitly exercise cornice.",
+      "retirement": null
+    },
+    {
+      "id": "R007.sill",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "sill",
+      "view": null,
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap. Explicitly exercise sill.",
+      "retirement": null
+    },
+    {
+      "id": "R007.one-cm-overlap",
+      "requirement": "R007",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "one-cm-overlap",
+      "view": null,
+      "expected": "Edit wall thickness, frames, architraves, panels, baseboards, cornices, and sills; a 1 cm protrusion affects overlap. Explicitly exercise one-cm-overlap.",
+      "retirement": null
+    },
+    {
+      "id": "R008.contract",
+      "requirement": "R008",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Place beams with custom direction, size and elevation, including the measured fixture and intentional ceiling intersection.",
+      "retirement": null
+    },
+    {
+      "id": "R008.custom-direction",
+      "requirement": "R008",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "custom-direction",
+      "view": null,
+      "expected": "Place beams with custom direction, size and elevation, including the measured fixture and intentional ceiling intersection. Explicitly exercise custom-direction.",
+      "retirement": null
+    },
+    {
+      "id": "R008.custom-elevation",
+      "requirement": "R008",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "custom-elevation",
+      "view": null,
+      "expected": "Place beams with custom direction, size and elevation, including the measured fixture and intentional ceiling intersection. Explicitly exercise custom-elevation.",
+      "retirement": null
+    },
+    {
+      "id": "R008.custom-size",
+      "requirement": "R008",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "custom-size",
+      "view": null,
+      "expected": "Place beams with custom direction, size and elevation, including the measured fixture and intentional ceiling intersection. Explicitly exercise custom-size.",
+      "retirement": null
+    },
+    {
+      "id": "R008.intentional-embedment",
+      "requirement": "R008",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "intentional-embedment",
+      "view": null,
+      "expected": "Place beams with custom direction, size and elevation, including the measured fixture and intentional ceiling intersection. Explicitly exercise intentional-embedment.",
+      "retirement": null
+    },
+    {
+      "id": "R009.contract",
+      "requirement": "R009",
+      "release": "v1",
+      "milestone": "M2",
+      "expected": "Show cm to two decimals; accept metric/imperial units; unit round trips preserve geometry and original/inferred distinction.",
+      "retirement": null
+    },
+    {
+      "id": "R009.cm-two-decimals",
+      "requirement": "R009",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "cm-two-decimals",
+      "view": null,
+      "expected": "Show cm to two decimals; accept metric/imperial units; unit round trips preserve geometry and original/inferred distinction. Explicitly exercise cm-two-decimals.",
+      "retirement": null
+    },
+    {
+      "id": "R009.metric",
+      "requirement": "R009",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "metric",
+      "view": null,
+      "expected": "Show cm to two decimals; accept metric/imperial units; unit round trips preserve geometry and original/inferred distinction. Explicitly exercise metric.",
+      "retirement": null
+    },
+    {
+      "id": "R009.imperial",
+      "requirement": "R009",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "imperial",
+      "view": null,
+      "expected": "Show cm to two decimals; accept metric/imperial units; unit round trips preserve geometry and original/inferred distinction. Explicitly exercise imperial.",
+      "retirement": null
+    },
+    {
+      "id": "R009.unit-roundtrip",
+      "requirement": "R009",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "unit-roundtrip",
+      "view": null,
+      "expected": "Show cm to two decimals; accept metric/imperial units; unit round trips preserve geometry and original/inferred distinction. Explicitly exercise unit-roundtrip.",
+      "retirement": null
+    },
+    {
+      "id": "R009.provenance",
+      "requirement": "R009",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "provenance",
+      "view": null,
+      "expected": "Show cm to two decimals; accept metric/imperial units; unit round trips preserve geometry and original/inferred distinction. Explicitly exercise provenance.",
+      "retirement": null
+    },
+    {
+      "id": "R010.contract",
+      "requirement": "R010",
+      "release": "v1",
+      "milestone": "M2",
+      "expected": "Distinguish insufficient angles from contradictory measurements, identify relevant geometry, preview auto-repair and undo it.",
+      "retirement": null
+    },
+    {
+      "id": "R010.underdetermined",
+      "requirement": "R010",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "underdetermined",
+      "view": null,
+      "expected": "Distinguish insufficient angles from contradictory measurements, identify relevant geometry, preview auto-repair and undo it. Explicitly exercise underdetermined.",
+      "retirement": null
+    },
+    {
+      "id": "R010.contradictory",
+      "requirement": "R010",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "contradictory",
+      "view": null,
+      "expected": "Distinguish insufficient angles from contradictory measurements, identify relevant geometry, preview auto-repair and undo it. Explicitly exercise contradictory.",
+      "retirement": null
+    },
+    {
+      "id": "R010.locked",
+      "requirement": "R010",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "locked",
+      "view": null,
+      "expected": "Distinguish insufficient angles from contradictory measurements, identify relevant geometry, preview auto-repair and undo it. Explicitly exercise locked.",
+      "retirement": null
+    },
+    {
+      "id": "R010.repair-preview",
+      "requirement": "R010",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "repair-preview",
+      "view": null,
+      "expected": "Distinguish insufficient angles from contradictory measurements, identify relevant geometry, preview auto-repair and undo it. Explicitly exercise repair-preview.",
+      "retirement": null
+    },
+    {
+      "id": "R010.repair-cancel",
+      "requirement": "R010",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "repair-cancel",
+      "view": null,
+      "expected": "Distinguish insufficient angles from contradictory measurements, identify relevant geometry, preview auto-repair and undo it. Explicitly exercise repair-cancel.",
+      "retirement": null
+    },
+    {
+      "id": "R010.repair-apply-undo",
+      "requirement": "R010",
+      "release": "v1",
+      "milestone": "M2",
+      "variant": "repair-apply-undo",
+      "view": null,
+      "expected": "Distinguish insufficient angles from contradictory measurements, identify relevant geometry, preview auto-repair and undo it. Explicitly exercise repair-apply-undo.",
+      "retirement": null
+    },
+    {
+      "id": "R011.contract",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state.",
+      "retirement": null
+    },
+    {
+      "id": "R011.create.2d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "create",
+      "view": "2d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise create in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.create.3d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "create",
+      "view": "3d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise create in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.select.2d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "select",
+      "view": "2d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise select in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.select.3d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "select",
+      "view": "3d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise select in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.dimensions.2d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "dimensions",
+      "view": "2d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise dimensions in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.dimensions.3d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "dimensions",
+      "view": "3d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise dimensions in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.elevation.2d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "elevation",
+      "view": "2d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise elevation in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.elevation.3d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "elevation",
+      "view": "3d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise elevation in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.rotation.2d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "rotation",
+      "view": "2d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise rotation in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.rotation.3d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "rotation",
+      "view": "3d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise rotation in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.material.2d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "material",
+      "view": "2d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise material in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.material.3d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "material",
+      "view": "3d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise material in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.wall-distance.2d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "wall-distance",
+      "view": "2d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise wall-distance in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R011.wall-distance.3d",
+      "requirement": "R011",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "wall-distance",
+      "view": "3d",
+      "expected": "Create/select/edit dimensions, elevation, rotation, materials and distances in either view against the same state. Explicitly exercise wall-distance in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R012.contract",
+      "requirement": "R012",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Wall edits preview affected attached openings/fixtures and preserve intended positions; conflicts do not delete or silently resize objects.",
+      "retirement": null
+    },
+    {
+      "id": "R012.near-end-anchor",
+      "requirement": "R012",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "near-end-anchor",
+      "view": null,
+      "expected": "Wall edits preview affected attached openings/fixtures and preserve intended positions; conflicts do not delete or silently resize objects. Explicitly exercise near-end-anchor.",
+      "retirement": null
+    },
+    {
+      "id": "R012.attached-follow",
+      "requirement": "R012",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "attached-follow",
+      "view": null,
+      "expected": "Wall edits preview affected attached openings/fixtures and preserve intended positions; conflicts do not delete or silently resize objects. Explicitly exercise attached-follow.",
+      "retirement": null
+    },
+    {
+      "id": "R012.free-coordinate",
+      "requirement": "R012",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "free-coordinate",
+      "view": null,
+      "expected": "Wall edits preview affected attached openings/fixtures and preserve intended positions; conflicts do not delete or silently resize objects. Explicitly exercise free-coordinate.",
+      "retirement": null
+    },
+    {
+      "id": "R012.conflict-preview",
+      "requirement": "R012",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "conflict-preview",
+      "view": null,
+      "expected": "Wall edits preview affected attached openings/fixtures and preserve intended positions; conflicts do not delete or silently resize objects. Explicitly exercise conflict-preview.",
+      "retirement": null
+    },
+    {
+      "id": "R012.no-silent-resize",
+      "requirement": "R012",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "no-silent-resize",
+      "view": null,
+      "expected": "Wall edits preview affected attached openings/fixtures and preserve intended positions; conflicts do not delete or silently resize objects. Explicitly exercise no-silent-resize.",
+      "retirement": null
+    },
+    {
+      "id": "R013.contract",
+      "requirement": "R013",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Snap to wall/floor/object/alignment targets; display snap state and textual/visual overlap warnings without prohibiting placement.",
+      "retirement": null
+    },
+    {
+      "id": "R013.wall-snap",
+      "requirement": "R013",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "wall-snap",
+      "view": null,
+      "expected": "Snap to wall/floor/object/alignment targets; display snap state and textual/visual overlap warnings without prohibiting placement. Explicitly exercise wall-snap.",
+      "retirement": null
+    },
+    {
+      "id": "R013.floor-snap",
+      "requirement": "R013",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "floor-snap",
+      "view": null,
+      "expected": "Snap to wall/floor/object/alignment targets; display snap state and textual/visual overlap warnings without prohibiting placement. Explicitly exercise floor-snap.",
+      "retirement": null
+    },
+    {
+      "id": "R013.object-snap",
+      "requirement": "R013",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "object-snap",
+      "view": null,
+      "expected": "Snap to wall/floor/object/alignment targets; display snap state and textual/visual overlap warnings without prohibiting placement. Explicitly exercise object-snap.",
+      "retirement": null
+    },
+    {
+      "id": "R013.alignment",
+      "requirement": "R013",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "alignment",
+      "view": null,
+      "expected": "Snap to wall/floor/object/alignment targets; display snap state and textual/visual overlap warnings without prohibiting placement. Explicitly exercise alignment.",
+      "retirement": null
+    },
+    {
+      "id": "R013.touch-vs-intersect",
+      "requirement": "R013",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "touch-vs-intersect",
+      "view": null,
+      "expected": "Snap to wall/floor/object/alignment targets; display snap state and textual/visual overlap warnings without prohibiting placement. Explicitly exercise touch-vs-intersect.",
+      "retirement": null
+    },
+    {
+      "id": "R013.text-warning",
+      "requirement": "R013",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "text-warning",
+      "view": null,
+      "expected": "Snap to wall/floor/object/alignment targets; display snap state and textual/visual overlap warnings without prohibiting placement. Explicitly exercise text-warning.",
+      "retirement": null
+    },
+    {
+      "id": "R013.nonblocking-placement",
+      "requirement": "R013",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "nonblocking-placement",
+      "view": null,
+      "expected": "Snap to wall/floor/object/alignment targets; display snap state and textual/visual overlap warnings without prohibiting placement. Explicitly exercise nonblocking-placement.",
+      "retirement": null
+    },
+    {
+      "id": "R014.contract",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount.",
+      "retirement": null
+    },
+    {
+      "id": "R014.single-hinged.2d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "single-hinged",
+      "view": "2d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise single-hinged in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.single-hinged.3d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "single-hinged",
+      "view": "3d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise single-hinged in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.double-hinged.2d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "double-hinged",
+      "view": "2d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise double-hinged in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.double-hinged.3d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "double-hinged",
+      "view": "3d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise double-hinged in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.wall-sliding.2d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "wall-sliding",
+      "view": "2d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise wall-sliding in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.wall-sliding.3d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "wall-sliding",
+      "view": "3d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise wall-sliding in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.pocket.2d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "pocket",
+      "view": "2d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise pocket in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.pocket.3d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "pocket",
+      "view": "3d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise pocket in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.folding.2d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "folding",
+      "view": "2d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise folding in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.folding.3d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "folding",
+      "view": "3d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise folding in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.pivot.2d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "pivot",
+      "view": "2d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise pivot in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R014.pivot.3d",
+      "requirement": "R014",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "pivot",
+      "view": "3d",
+      "expected": "Edit single/double hinged, wall-sliding, pocket, folding and pivot doors with applicable handing, frames, thresholds and opening amount. Explicitly exercise pivot in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.contract",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection.",
+      "retirement": null
+    },
+    {
+      "id": "R015.single-hinged-mid-motion.2d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "single-hinged-mid-motion",
+      "view": "2d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise single-hinged-mid-motion in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.single-hinged-mid-motion.3d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "single-hinged-mid-motion",
+      "view": "3d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise single-hinged-mid-motion in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.double-hinged-mid-motion.2d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "double-hinged-mid-motion",
+      "view": "2d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise double-hinged-mid-motion in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.double-hinged-mid-motion.3d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "double-hinged-mid-motion",
+      "view": "3d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise double-hinged-mid-motion in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.wall-sliding-mid-motion.2d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "wall-sliding-mid-motion",
+      "view": "2d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise wall-sliding-mid-motion in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.wall-sliding-mid-motion.3d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "wall-sliding-mid-motion",
+      "view": "3d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise wall-sliding-mid-motion in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.pocket-mid-motion.2d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "pocket-mid-motion",
+      "view": "2d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise pocket-mid-motion in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.pocket-mid-motion.3d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "pocket-mid-motion",
+      "view": "3d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise pocket-mid-motion in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.folding-mid-motion.2d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "folding-mid-motion",
+      "view": "2d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise folding-mid-motion in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.folding-mid-motion.3d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "folding-mid-motion",
+      "view": "3d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise folding-mid-motion in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.pivot-mid-motion.2d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "pivot-mid-motion",
+      "view": "2d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise pivot-mid-motion in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.pivot-mid-motion.3d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "pivot-mid-motion",
+      "view": "3d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise pivot-mid-motion in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.touch-vs-intersect.2d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "touch-vs-intersect",
+      "view": "2d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise touch-vs-intersect in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R015.touch-vs-intersect.3d",
+      "requirement": "R015",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "touch-vs-intersect",
+      "view": "3d",
+      "expected": "Detect an obstruction reached midway through door movement for every supported mechanism; distinguish touching from intersection. Explicitly exercise touch-vs-intersect in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.contract",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half.",
+      "retirement": null
+    },
+    {
+      "id": "R016.preset.2d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "preset",
+      "view": "2d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise preset in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.preset.3d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "preset",
+      "view": "3d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise preset in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.custom.2d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "custom",
+      "view": "2d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise custom in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.custom.3d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "custom",
+      "view": "3d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise custom in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.fixed.2d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "fixed",
+      "view": "2d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise fixed in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.fixed.3d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "fixed",
+      "view": "3d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise fixed in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.hinged.2d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "hinged",
+      "view": "2d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise hinged in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.hinged.3d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "hinged",
+      "view": "3d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise hinged in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.tilt-turn.2d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "tilt-turn",
+      "view": "2d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise tilt-turn in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.tilt-turn.3d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "tilt-turn",
+      "view": "3d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise tilt-turn in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.sliding.2d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "sliding",
+      "view": "2d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise sliding in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.sliding.3d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "sliding",
+      "view": "3d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise sliding in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.fixed-lower.2d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "fixed-lower",
+      "view": "2d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise fixed-lower in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.fixed-lower.3d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "fixed-lower",
+      "view": "3d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise fixed-lower in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.independent-pane.2d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "independent-pane",
+      "view": "2d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise independent-pane in 2d.",
+      "retirement": null
+    },
+    {
+      "id": "R016.independent-pane.3d",
+      "requirement": "R016",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "independent-pane",
+      "view": "3d",
+      "expected": "Create fixed, hinged, tilt-and-turn and sliding pane layouts, including fixed lower section and one sliding upper half. Explicitly exercise independent-pane in 3d.",
+      "retirement": null
+    },
+    {
+      "id": "R017.contract",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion.",
+      "retirement": null
+    },
+    {
+      "id": "R017.us",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "us",
+      "view": null,
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion. Explicitly exercise us.",
+      "retirement": null
+    },
+    {
+      "id": "R017.israel",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "israel",
+      "view": null,
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion. Explicitly exercise israel.",
+      "retirement": null
+    },
+    {
+      "id": "R017.europe-variants",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "europe-variants",
+      "view": null,
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion. Explicitly exercise europe-variants.",
+      "retirement": null
+    },
+    {
+      "id": "R017.switch",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "switch",
+      "view": null,
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion. Explicitly exercise switch.",
+      "retirement": null
+    },
+    {
+      "id": "R017.data",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "data",
+      "view": null,
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion. Explicitly exercise data.",
+      "retirement": null
+    },
+    {
+      "id": "R017.tv",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "tv",
+      "view": null,
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion. Explicitly exercise tv.",
+      "retirement": null
+    },
+    {
+      "id": "R017.multi-gang",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "multi-gang",
+      "view": null,
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion. Explicitly exercise multi-gang.",
+      "retirement": null
+    },
+    {
+      "id": "R017.dimensions-protrusion",
+      "requirement": "R017",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "dimensions-protrusion",
+      "view": null,
+      "expected": "Place US, Israeli and enumerated European outlet variants, switches, data/TV and multi-gang plates with dimensions/elevation/protrusion. Explicitly exercise dimensions-protrusion.",
+      "retirement": null
+    },
+    {
+      "id": "R018.contract",
+      "requirement": "R018",
+      "release": "v1",
+      "milestone": "M3",
+      "expected": "Resize generic table/chair/cabinet width/depth/height and place furnishing accessories including shutters/blinds/screens.",
+      "retirement": null
+    },
+    {
+      "id": "R018.table",
+      "requirement": "R018",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "table",
+      "view": null,
+      "expected": "Resize generic table/chair/cabinet width/depth/height and place furnishing accessories including shutters/blinds/screens. Explicitly exercise table.",
+      "retirement": null
+    },
+    {
+      "id": "R018.chair",
+      "requirement": "R018",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "chair",
+      "view": null,
+      "expected": "Resize generic table/chair/cabinet width/depth/height and place furnishing accessories including shutters/blinds/screens. Explicitly exercise chair.",
+      "retirement": null
+    },
+    {
+      "id": "R018.cabinet",
+      "requirement": "R018",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "cabinet",
+      "view": null,
+      "expected": "Resize generic table/chair/cabinet width/depth/height and place furnishing accessories including shutters/blinds/screens. Explicitly exercise cabinet.",
+      "retirement": null
+    },
+    {
+      "id": "R018.shutters",
+      "requirement": "R018",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "shutters",
+      "view": null,
+      "expected": "Resize generic table/chair/cabinet width/depth/height and place furnishing accessories including shutters/blinds/screens. Explicitly exercise shutters.",
+      "retirement": null
+    },
+    {
+      "id": "R018.blinds",
+      "requirement": "R018",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "blinds",
+      "view": null,
+      "expected": "Resize generic table/chair/cabinet width/depth/height and place furnishing accessories including shutters/blinds/screens. Explicitly exercise blinds.",
+      "retirement": null
+    },
+    {
+      "id": "R018.screens",
+      "requirement": "R018",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "screens",
+      "view": null,
+      "expected": "Resize generic table/chair/cabinet width/depth/height and place furnishing accessories including shutters/blinds/screens. Explicitly exercise screens.",
+      "retirement": null
+    },
+    {
+      "id": "R018.resize",
+      "requirement": "R018",
+      "release": "v1",
+      "milestone": "M3",
+      "variant": "resize",
+      "view": null,
+      "expected": "Resize generic table/chair/cabinet width/depth/height and place furnishing accessories including shutters/blinds/screens. Explicitly exercise resize.",
+      "retirement": null
+    },
+    {
+      "id": "R019.contract",
+      "requirement": "R019",
+      "release": "v1",
+      "milestone": "M5",
+      "expected": "Apply material/color/texture to supported surfaces, including opposite wall faces and product options; user textures survive sharing.",
+      "retirement": null
+    },
+    {
+      "id": "R019.wall-inside",
+      "requirement": "R019",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "wall-inside",
+      "view": null,
+      "expected": "Apply material/color/texture to supported surfaces, including opposite wall faces and product options; user textures survive sharing. Explicitly exercise wall-inside.",
+      "retirement": null
+    },
+    {
+      "id": "R019.wall-outside",
+      "requirement": "R019",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "wall-outside",
+      "view": null,
+      "expected": "Apply material/color/texture to supported surfaces, including opposite wall faces and product options; user textures survive sharing. Explicitly exercise wall-outside.",
+      "retirement": null
+    },
+    {
+      "id": "R019.floor",
+      "requirement": "R019",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "floor",
+      "view": null,
+      "expected": "Apply material/color/texture to supported surfaces, including opposite wall faces and product options; user textures survive sharing. Explicitly exercise floor.",
+      "retirement": null
+    },
+    {
+      "id": "R019.furniture",
+      "requirement": "R019",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "furniture",
+      "view": null,
+      "expected": "Apply material/color/texture to supported surfaces, including opposite wall faces and product options; user textures survive sharing. Explicitly exercise furniture.",
+      "retirement": null
+    },
+    {
+      "id": "R019.local-texture-sharing",
+      "requirement": "R019",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "local-texture-sharing",
+      "view": null,
+      "expected": "Apply material/color/texture to supported surfaces, including opposite wall faces and product options; user textures survive sharing. Explicitly exercise local-texture-sharing.",
+      "retirement": null
+    },
+    {
+      "id": "R020.contract",
+      "requirement": "R020",
+      "release": "v1",
+      "milestone": "M5",
+      "expected": "Render daylight location/time, artificial lights, glass, mirrors and textures with usable tablet quality controls.",
+      "retirement": null
+    },
+    {
+      "id": "R020.daylight-location",
+      "requirement": "R020",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "daylight-location",
+      "view": null,
+      "expected": "Render daylight location/time, artificial lights, glass, mirrors and textures with usable tablet quality controls. Explicitly exercise daylight-location.",
+      "retirement": null
+    },
+    {
+      "id": "R020.daylight-time",
+      "requirement": "R020",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "daylight-time",
+      "view": null,
+      "expected": "Render daylight location/time, artificial lights, glass, mirrors and textures with usable tablet quality controls. Explicitly exercise daylight-time.",
+      "retirement": null
+    },
+    {
+      "id": "R020.artificial-light",
+      "requirement": "R020",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "artificial-light",
+      "view": null,
+      "expected": "Render daylight location/time, artificial lights, glass, mirrors and textures with usable tablet quality controls. Explicitly exercise artificial-light.",
+      "retirement": null
+    },
+    {
+      "id": "R020.glass",
+      "requirement": "R020",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "glass",
+      "view": null,
+      "expected": "Render daylight location/time, artificial lights, glass, mirrors and textures with usable tablet quality controls. Explicitly exercise glass.",
+      "retirement": null
+    },
+    {
+      "id": "R020.mirror",
+      "requirement": "R020",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "mirror",
+      "view": null,
+      "expected": "Render daylight location/time, artificial lights, glass, mirrors and textures with usable tablet quality controls. Explicitly exercise mirror.",
+      "retirement": null
+    },
+    {
+      "id": "R020.tablet-quality",
+      "requirement": "R020",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "tablet-quality",
+      "view": null,
+      "expected": "Render daylight location/time, artificial lights, glass, mirrors and textures with usable tablet quality controls. Explicitly exercise tablet-quality.",
+      "retirement": null
+    },
+    {
+      "id": "R021.contract",
+      "requirement": "R021",
+      "release": "v1",
+      "milestone": "M1",
+      "expected": "Material face identifiers and a versioned region extension allow later multi-finish walls without coupling model to current renderer.",
+      "retirement": null
+    },
+    {
+      "id": "R022.contract",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects.",
+      "retirement": null
+    },
+    {
+      "id": "R022.url-add",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "url-add",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise url-add.",
+      "retirement": null
+    },
+    {
+      "id": "R022.persistent-across-projects",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "persistent-across-projects",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise persistent-across-projects.",
+      "retirement": null
+    },
+    {
+      "id": "R022.identity",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "identity",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise identity.",
+      "retirement": null
+    },
+    {
+      "id": "R022.dimensions",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "dimensions",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise dimensions.",
+      "retirement": null
+    },
+    {
+      "id": "R022.variant",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "variant",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise variant.",
+      "retirement": null
+    },
+    {
+      "id": "R022.material",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "material",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise material.",
+      "retirement": null
+    },
+    {
+      "id": "R022.image",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "image",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise image.",
+      "retirement": null
+    },
+    {
+      "id": "R022.price-currency",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "price-currency",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise price-currency.",
+      "retirement": null
+    },
+    {
+      "id": "R022.provenance",
+      "requirement": "R022",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "provenance",
+      "view": null,
+      "expected": "Add product URL and available identity/dimensions/variants/materials/images/price/currency/model/provenance; reuse across projects. Explicitly exercise provenance.",
+      "retirement": null
+    },
+    {
+      "id": "R023.contract",
+      "requirement": "R023",
+      "release": "v1",
+      "milestone": "M4",
+      "expected": "Preview/apply/cancel deliberate options; notify and offer keep/preview/replace for source updates without silent mutations.",
+      "retirement": null
+    },
+    {
+      "id": "R023.option-preview",
+      "requirement": "R023",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "option-preview",
+      "view": null,
+      "expected": "Preview/apply/cancel deliberate options; notify and offer keep/preview/replace for source updates without silent mutations. Explicitly exercise option-preview.",
+      "retirement": null
+    },
+    {
+      "id": "R023.apply",
+      "requirement": "R023",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "apply",
+      "view": null,
+      "expected": "Preview/apply/cancel deliberate options; notify and offer keep/preview/replace for source updates without silent mutations. Explicitly exercise apply.",
+      "retirement": null
+    },
+    {
+      "id": "R023.cancel",
+      "requirement": "R023",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "cancel",
+      "view": null,
+      "expected": "Preview/apply/cancel deliberate options; notify and offer keep/preview/replace for source updates without silent mutations. Explicitly exercise cancel.",
+      "retirement": null
+    },
+    {
+      "id": "R023.update-notify",
+      "requirement": "R023",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "update-notify",
+      "view": null,
+      "expected": "Preview/apply/cancel deliberate options; notify and offer keep/preview/replace for source updates without silent mutations. Explicitly exercise update-notify.",
+      "retirement": null
+    },
+    {
+      "id": "R023.keep",
+      "requirement": "R023",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "keep",
+      "view": null,
+      "expected": "Preview/apply/cancel deliberate options; notify and offer keep/preview/replace for source updates without silent mutations. Explicitly exercise keep.",
+      "retirement": null
+    },
+    {
+      "id": "R023.replace",
+      "requirement": "R023",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "replace",
+      "view": null,
+      "expected": "Preview/apply/cancel deliberate options; notify and offer keep/preview/replace for source updates without silent mutations. Explicitly exercise replace.",
+      "retirement": null
+    },
+    {
+      "id": "R023.withdrawn-variant",
+      "requirement": "R023",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "withdrawn-variant",
+      "view": null,
+      "expected": "Preview/apply/cancel deliberate options; notify and offer keep/preview/replace for source updates without silent mutations. Explicitly exercise withdrawn-variant.",
+      "retirement": null
+    },
+    {
+      "id": "R024.contract",
+      "requirement": "R024",
+      "release": "v1",
+      "milestone": "M4",
+      "expected": "Install/remove catalog plugin from public GitHub repository; validate compatibility; browser fetch published data/assets.",
+      "retirement": null
+    },
+    {
+      "id": "R024.public-repository-install",
+      "requirement": "R024",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "public-repository-install",
+      "view": null,
+      "expected": "Install/remove catalog plugin from public GitHub repository; validate compatibility; browser fetch published data/assets. Explicitly exercise public-repository-install.",
+      "retirement": null
+    },
+    {
+      "id": "R024.remove",
+      "requirement": "R024",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "remove",
+      "view": null,
+      "expected": "Install/remove catalog plugin from public GitHub repository; validate compatibility; browser fetch published data/assets. Explicitly exercise remove.",
+      "retirement": null
+    },
+    {
+      "id": "R024.compatibility",
+      "requirement": "R024",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "compatibility",
+      "view": null,
+      "expected": "Install/remove catalog plugin from public GitHub repository; validate compatibility; browser fetch published data/assets. Explicitly exercise compatibility.",
+      "retirement": null
+    },
+    {
+      "id": "R024.cors-data",
+      "requirement": "R024",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "cors-data",
+      "view": null,
+      "expected": "Install/remove catalog plugin from public GitHub repository; validate compatibility; browser fetch published data/assets. Explicitly exercise cors-data.",
+      "retirement": null
+    },
+    {
+      "id": "R024.cors-assets",
+      "requirement": "R024",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "cors-assets",
+      "view": null,
+      "expected": "Install/remove catalog plugin from public GitHub repository; validate compatibility; browser fetch published data/assets. Explicitly exercise cors-assets.",
+      "retirement": null
+    },
+    {
+      "id": "R024.malformed",
+      "requirement": "R024",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "malformed",
+      "view": null,
+      "expected": "Install/remove catalog plugin from public GitHub repository; validate compatibility; browser fetch published data/assets. Explicitly exercise malformed.",
+      "retirement": null
+    },
+    {
+      "id": "R025.contract",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project.",
+      "retirement": null
+    },
+    {
+      "id": "R025.schema",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "schema",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise schema.",
+      "retirement": null
+    },
+    {
+      "id": "R025.examples",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "examples",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise examples.",
+      "retirement": null
+    },
+    {
+      "id": "R025.producer-conformance",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "producer-conformance",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise producer-conformance.",
+      "retirement": null
+    },
+    {
+      "id": "R025.uninstall-old-reference",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "uninstall-old-reference",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise uninstall-old-reference.",
+      "retirement": null
+    },
+    {
+      "id": "R025.importer-extension",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "importer-extension",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise importer-extension.",
+      "retirement": null
+    },
+    {
+      "id": "R025.catalog-hash",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "catalog-hash",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise catalog-hash.",
+      "retirement": null
+    },
+    {
+      "id": "R025.glb-hash",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "glb-hash",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise glb-hash.",
+      "retirement": null
+    },
+    {
+      "id": "R025.texture-hash",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "texture-hash",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise texture-hash.",
+      "retirement": null
+    },
+    {
+      "id": "R025.cache-hash",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "cache-hash",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise cache-hash.",
+      "retirement": null
+    },
+    {
+      "id": "R025.unchanged-url-reopen",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "unchanged-url-reopen",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise unchanged-url-reopen.",
+      "retirement": null
+    },
+    {
+      "id": "R025.unchanged-url-undo",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "unchanged-url-undo",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise unchanged-url-undo.",
+      "retirement": null
+    },
+    {
+      "id": "R025.unchanged-url-fresh-profile",
+      "requirement": "R025",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "unchanged-url-fresh-profile",
+      "view": null,
+      "expected": "Publish schemas/examples/conformance suite; preserve old project references on uninstall; declare future importer extension boundary. Verify pinned catalog and asset content hashes, including dependent textures and cached content, before accepting resources; changed bytes at an unchanged URL/version must not silently alter a saved project. Explicitly exercise unchanged-url-fresh-profile.",
+      "retirement": null
+    },
+    {
+      "id": "R026.contract",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place.",
+      "retirement": null
+    },
+    {
+      "id": "R026.frozen-denominator",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "frozen-denominator",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise frozen-denominator.",
+      "retirement": null
+    },
+    {
+      "id": "R026.every-eligible-import",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "every-eligible-import",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise every-eligible-import.",
+      "retirement": null
+    },
+    {
+      "id": "R026.israel-identity",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "israel-identity",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise israel-identity.",
+      "retirement": null
+    },
+    {
+      "id": "R026.hebrew",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "hebrew",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise hebrew.",
+      "retirement": null
+    },
+    {
+      "id": "R026.ils-price",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "ils-price",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise ils-price.",
+      "retirement": null
+    },
+    {
+      "id": "R026.options",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "options",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise options.",
+      "retirement": null
+    },
+    {
+      "id": "R026.nonempty-holdout-placement",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "nonempty-holdout-placement",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise nonempty-holdout-placement.",
+      "retirement": null
+    },
+    {
+      "id": "R026.explained-failure-blocks",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "explained-failure-blocks",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise explained-failure-blocks.",
+      "retirement": null
+    },
+    {
+      "id": "R026.retirement-authorization",
+      "requirement": "R026",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "retirement-authorization",
+      "view": null,
+      "expected": "Successfully import every frozen eligible Israeli individual product using source/inferred/generic geometry with dimensions, provenance, local options/Hebrew/available ILS prices; explained failures do not count as coverage. Removing eligible products requires an explicit user-approved scope change; nonempty holdouts must successfully import and place. Explicitly exercise retirement-authorization.",
+      "retirement": null
+    },
+    {
+      "id": "R027.contract",
+      "requirement": "R027",
+      "release": "v1",
+      "milestone": "M4",
+      "expected": "Use source, inferred, or dimensioned generic geometry with clear labels; never invent verified dimensions or cross-country variants.",
+      "retirement": null
+    },
+    {
+      "id": "R027.source",
+      "requirement": "R027",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "source",
+      "view": null,
+      "expected": "Use source, inferred, or dimensioned generic geometry with clear labels; never invent verified dimensions or cross-country variants. Explicitly exercise source.",
+      "retirement": null
+    },
+    {
+      "id": "R027.inferred",
+      "requirement": "R027",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "inferred",
+      "view": null,
+      "expected": "Use source, inferred, or dimensioned generic geometry with clear labels; never invent verified dimensions or cross-country variants. Explicitly exercise inferred.",
+      "retirement": null
+    },
+    {
+      "id": "R027.generic",
+      "requirement": "R027",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "generic",
+      "view": null,
+      "expected": "Use source, inferred, or dimensioned generic geometry with clear labels; never invent verified dimensions or cross-country variants. Explicitly exercise generic.",
+      "retirement": null
+    },
+    {
+      "id": "R027.missing-dimension",
+      "requirement": "R027",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "missing-dimension",
+      "view": null,
+      "expected": "Use source, inferred, or dimensioned generic geometry with clear labels; never invent verified dimensions or cross-country variants. Explicitly exercise missing-dimension.",
+      "retirement": null
+    },
+    {
+      "id": "R027.no-country-substitution",
+      "requirement": "R027",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "no-country-substitution",
+      "view": null,
+      "expected": "Use source, inferred, or dimensioned generic geometry with clear labels; never invent verified dimensions or cross-country variants. Explicitly exercise no-country-substitution.",
+      "retirement": null
+    },
+    {
+      "id": "R027.duplicate-export-provenance",
+      "requirement": "R027",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "duplicate-export-provenance",
+      "view": null,
+      "expected": "Use source, inferred, or dimensioned generic geometry with clear labels; never invent verified dimensions or cross-country variants. Explicitly exercise duplicate-export-provenance.",
+      "retirement": null
+    },
+    {
+      "id": "R028.contract",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog.",
+      "retirement": null
+    },
+    {
+      "id": "R028.discovery",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "discovery",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise discovery.",
+      "retirement": null
+    },
+    {
+      "id": "R028.bounded-fetch",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "bounded-fetch",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise bounded-fetch.",
+      "retirement": null
+    },
+    {
+      "id": "R028.resume",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "resume",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise resume.",
+      "retirement": null
+    },
+    {
+      "id": "R028.normalize",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "normalize",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise normalize.",
+      "retirement": null
+    },
+    {
+      "id": "R028.validate",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "validate",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise validate.",
+      "retirement": null
+    },
+    {
+      "id": "R028.immutable-publish",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "immutable-publish",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise immutable-publish.",
+      "retirement": null
+    },
+    {
+      "id": "R028.last-pointer",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "last-pointer",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise last-pointer.",
+      "retirement": null
+    },
+    {
+      "id": "R028.failed-refresh",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "failed-refresh",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise failed-refresh.",
+      "retirement": null
+    },
+    {
+      "id": "R028.mass-deletion",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "mass-deletion",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise mass-deletion.",
+      "retirement": null
+    },
+    {
+      "id": "R028.rights-attribution",
+      "requirement": "R028",
+      "release": "v1",
+      "milestone": "M4",
+      "variant": "rights-attribution",
+      "view": null,
+      "expected": "Offline producer discovery/fetch/normalization/validation publishes complete immutable versions; failure preserves last good catalog. Explicitly exercise rights-attribution.",
+      "retirement": null
+    },
+    {
+      "id": "R029.contract",
+      "requirement": "R029",
+      "release": "v1",
+      "milestone": "M5",
+      "expected": "Duplicate/rename independent layouts and preserve all alternatives on save/reopen without unintended cross-layout changes.",
+      "retirement": null
+    },
+    {
+      "id": "R029.duplicate",
+      "requirement": "R029",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "duplicate",
+      "view": null,
+      "expected": "Duplicate/rename independent layouts and preserve all alternatives on save/reopen without unintended cross-layout changes. Explicitly exercise duplicate.",
+      "retirement": null
+    },
+    {
+      "id": "R029.rename",
+      "requirement": "R029",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "rename",
+      "view": null,
+      "expected": "Duplicate/rename independent layouts and preserve all alternatives on save/reopen without unintended cross-layout changes. Explicitly exercise rename.",
+      "retirement": null
+    },
+    {
+      "id": "R029.independent-shell",
+      "requirement": "R029",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "independent-shell",
+      "view": null,
+      "expected": "Duplicate/rename independent layouts and preserve all alternatives on save/reopen without unintended cross-layout changes. Explicitly exercise independent-shell.",
+      "retirement": null
+    },
+    {
+      "id": "R029.save-reopen",
+      "requirement": "R029",
+      "release": "v1",
+      "milestone": "M5",
+      "variant": "save-reopen",
+      "view": null,
+      "expected": "Duplicate/rename independent layouts and preserve all alternatives on save/reopen without unintended cross-layout changes. Explicitly exercise save-reopen.",
+      "retirement": null
+    },
+    {
+      "id": "R030.contract",
+      "requirement": "R030",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Recover local edits; explicitly save/open portable files; handle interrupted save, quota denial and concurrent tabs without silent loss.",
+      "retirement": null
+    },
+    {
+      "id": "R030.recovery",
+      "requirement": "R030",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "recovery",
+      "view": null,
+      "expected": "Recover local edits; explicitly save/open portable files; handle interrupted save, quota denial and concurrent tabs without silent loss. Explicitly exercise recovery.",
+      "retirement": null
+    },
+    {
+      "id": "R030.save",
+      "requirement": "R030",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "save",
+      "view": null,
+      "expected": "Recover local edits; explicitly save/open portable files; handle interrupted save, quota denial and concurrent tabs without silent loss. Explicitly exercise save.",
+      "retirement": null
+    },
+    {
+      "id": "R030.open",
+      "requirement": "R030",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "open",
+      "view": null,
+      "expected": "Recover local edits; explicitly save/open portable files; handle interrupted save, quota denial and concurrent tabs without silent loss. Explicitly exercise open.",
+      "retirement": null
+    },
+    {
+      "id": "R030.interruption",
+      "requirement": "R030",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "interruption",
+      "view": null,
+      "expected": "Recover local edits; explicitly save/open portable files; handle interrupted save, quota denial and concurrent tabs without silent loss. Explicitly exercise interruption.",
+      "retirement": null
+    },
+    {
+      "id": "R030.quota",
+      "requirement": "R030",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "quota",
+      "view": null,
+      "expected": "Recover local edits; explicitly save/open portable files; handle interrupted save, quota denial and concurrent tabs without silent loss. Explicitly exercise quota.",
+      "retirement": null
+    },
+    {
+      "id": "R030.two-tabs",
+      "requirement": "R030",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "two-tabs",
+      "view": null,
+      "expected": "Recover local edits; explicitly save/open portable files; handle interrupted save, quota denial and concurrent tabs without silent loss. Explicitly exercise two-tabs.",
+      "retirement": null
+    },
+    {
+      "id": "R030.eviction",
+      "requirement": "R030",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "eviction",
+      "view": null,
+      "expected": "Recover local edits; explicitly save/open portable files; handle interrupted save, quota denial and concurrent tabs without silent loss. Explicitly exercise eviction.",
+      "retirement": null
+    },
+    {
+      "id": "R031.contract",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations.",
+      "retirement": null
+    },
+    {
+      "id": "R031.geometry",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "geometry",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise geometry.",
+      "retirement": null
+    },
+    {
+      "id": "R031.placement",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "placement",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise placement.",
+      "retirement": null
+    },
+    {
+      "id": "R031.materials",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "materials",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise materials.",
+      "retirement": null
+    },
+    {
+      "id": "R031.variants",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "variants",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise variants.",
+      "retirement": null
+    },
+    {
+      "id": "R031.layouts",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "layouts",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise layouts.",
+      "retirement": null
+    },
+    {
+      "id": "R031.cursor",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "cursor",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise cursor.",
+      "retirement": null
+    },
+    {
+      "id": "R031.reopen",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "reopen",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise reopen.",
+      "retirement": null
+    },
+    {
+      "id": "R031.migration",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "migration",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise migration.",
+      "retirement": null
+    },
+    {
+      "id": "R031.redo-branch",
+      "requirement": "R031",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "redo-branch",
+      "view": null,
+      "expected": "Undo/redo across geometry/product/layout edits and file reopen, preserving cursor/history dependencies through supported migrations. Explicitly exercise redo-branch.",
+      "retirement": null
+    },
+    {
+      "id": "R032.contract",
+      "requirement": "R032",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Recipient opens with no plugins/library; external assets may load online; local user assets survive; adding products to library is explicit.",
+      "retirement": null
+    },
+    {
+      "id": "R032.fresh-profile",
+      "requirement": "R032",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "fresh-profile",
+      "view": null,
+      "expected": "Recipient opens with no plugins/library; external assets may load online; local user assets survive; adding products to library is explicit. Explicitly exercise fresh-profile.",
+      "retirement": null
+    },
+    {
+      "id": "R032.no-library-pollution",
+      "requirement": "R032",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "no-library-pollution",
+      "view": null,
+      "expected": "Recipient opens with no plugins/library; external assets may load online; local user assets survive; adding products to library is explicit. Explicitly exercise no-library-pollution.",
+      "retirement": null
+    },
+    {
+      "id": "R032.explicit-library-add",
+      "requirement": "R032",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "explicit-library-add",
+      "view": null,
+      "expected": "Recipient opens with no plugins/library; external assets may load online; local user assets survive; adding products to library is explicit. Explicitly exercise explicit-library-add.",
+      "retirement": null
+    },
+    {
+      "id": "R032.local-textures",
+      "requirement": "R032",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "local-textures",
+      "view": null,
+      "expected": "Recipient opens with no plugins/library; external assets may load online; local user assets survive; adding products to library is explicit. Explicitly exercise local-textures.",
+      "retirement": null
+    },
+    {
+      "id": "R032.missing-online-resource",
+      "requirement": "R032",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "missing-online-resource",
+      "view": null,
+      "expected": "Recipient opens with no plugins/library; external assets may load online; local user assets survive; adding products to library is explicit. Explicitly exercise missing-online-resource.",
+      "retirement": null
+    },
+    {
+      "id": "R033.contract",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal.",
+      "retirement": null
+    },
+    {
+      "id": "R033.unknown-version",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "unknown-version",
+      "view": null,
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal. Explicitly exercise unknown-version.",
+      "retirement": null
+    },
+    {
+      "id": "R033.migration",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "migration",
+      "view": null,
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal. Explicitly exercise migration.",
+      "retirement": null
+    },
+    {
+      "id": "R033.malformed",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "malformed",
+      "view": null,
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal. Explicitly exercise malformed.",
+      "retirement": null
+    },
+    {
+      "id": "R033.archive-size",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "archive-size",
+      "view": null,
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal. Explicitly exercise archive-size.",
+      "retirement": null
+    },
+    {
+      "id": "R033.entry-count",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "entry-count",
+      "view": null,
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal. Explicitly exercise entry-count.",
+      "retirement": null
+    },
+    {
+      "id": "R033.truncated",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "truncated",
+      "view": null,
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal. Explicitly exercise truncated.",
+      "retirement": null
+    },
+    {
+      "id": "R033.missing-asset",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "missing-asset",
+      "view": null,
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal. Explicitly exercise missing-asset.",
+      "retirement": null
+    },
+    {
+      "id": "R033.integrity-mismatch",
+      "requirement": "R033",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "integrity-mismatch",
+      "view": null,
+      "expected": "Validate/migrate versioned files; reject unsafe/malformed input helpfully; missing assets preserve editable model and visible placeholders. Content-integrity mismatches preserve saved metadata and produce a labeled placeholder/error or explicit update proposal. Explicitly exercise integrity-mismatch.",
+      "retirement": null
+    },
+    {
+      "id": "R034.contract",
+      "requirement": "R034",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Export to-scale floor plans/elevations as PDF/SVG/DXF with units, annotations, and Hebrew labels.",
+      "retirement": null
+    },
+    {
+      "id": "R034.pdf-plan",
+      "requirement": "R034",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "pdf-plan",
+      "view": null,
+      "expected": "Export to-scale floor plans/elevations as PDF/SVG/DXF with units, annotations, and Hebrew labels. Explicitly exercise pdf-plan.",
+      "retirement": null
+    },
+    {
+      "id": "R034.pdf-elevation",
+      "requirement": "R034",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "pdf-elevation",
+      "view": null,
+      "expected": "Export to-scale floor plans/elevations as PDF/SVG/DXF with units, annotations, and Hebrew labels. Explicitly exercise pdf-elevation.",
+      "retirement": null
+    },
+    {
+      "id": "R034.svg",
+      "requirement": "R034",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "svg",
+      "view": null,
+      "expected": "Export to-scale floor plans/elevations as PDF/SVG/DXF with units, annotations, and Hebrew labels. Explicitly exercise svg.",
+      "retirement": null
+    },
+    {
+      "id": "R034.dxf",
+      "requirement": "R034",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "dxf",
+      "view": null,
+      "expected": "Export to-scale floor plans/elevations as PDF/SVG/DXF with units, annotations, and Hebrew labels. Explicitly exercise dxf.",
+      "retirement": null
+    },
+    {
+      "id": "R034.scale",
+      "requirement": "R034",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "scale",
+      "view": null,
+      "expected": "Export to-scale floor plans/elevations as PDF/SVG/DXF with units, annotations, and Hebrew labels. Explicitly exercise scale.",
+      "retirement": null
+    },
+    {
+      "id": "R034.hebrew",
+      "requirement": "R034",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "hebrew",
+      "view": null,
+      "expected": "Export to-scale floor plans/elevations as PDF/SVG/DXF with units, annotations, and Hebrew labels. Explicitly exercise hebrew.",
+      "retirement": null
+    },
+    {
+      "id": "R034.unit-legend",
+      "requirement": "R034",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "unit-legend",
+      "view": null,
+      "expected": "Export to-scale floor plans/elevations as PDF/SVG/DXF with units, annotations, and Hebrew labels. Explicitly exercise unit-legend.",
+      "retirement": null
+    },
+    {
+      "id": "R035.contract",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV.",
+      "retirement": null
+    },
+    {
+      "id": "R035.doors",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "doors",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise doors.",
+      "retirement": null
+    },
+    {
+      "id": "R035.windows",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "windows",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise windows.",
+      "retirement": null
+    },
+    {
+      "id": "R035.fixtures",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "fixtures",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise fixtures.",
+      "retirement": null
+    },
+    {
+      "id": "R035.shopping",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "shopping",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise shopping.",
+      "retirement": null
+    },
+    {
+      "id": "R035.csv",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "csv",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise csv.",
+      "retirement": null
+    },
+    {
+      "id": "R035.quantity",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "quantity",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise quantity.",
+      "retirement": null
+    },
+    {
+      "id": "R035.options",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "options",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise options.",
+      "retirement": null
+    },
+    {
+      "id": "R035.links",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "links",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise links.",
+      "retirement": null
+    },
+    {
+      "id": "R035.prices-dates",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "prices-dates",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise prices-dates.",
+      "retirement": null
+    },
+    {
+      "id": "R035.missing-value",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "missing-value",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise missing-value.",
+      "retirement": null
+    },
+    {
+      "id": "R035.mixed-currency",
+      "requirement": "R035",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "mixed-currency",
+      "view": null,
+      "expected": "Export doors/windows/fixtures and product quantities/options/links/available price/date/currency as readable documents and CSV. Explicitly exercise mixed-currency.",
+      "retirement": null
+    },
+    {
+      "id": "R036.contract",
+      "requirement": "R036",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Compute areas/quantities with explicit opening deductions and approximation indicators; report waste separately if included.",
+      "retirement": null
+    },
+    {
+      "id": "R036.independent-area",
+      "requirement": "R036",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "independent-area",
+      "view": null,
+      "expected": "Compute areas/quantities with explicit opening deductions and approximation indicators; report waste separately if included. Explicitly exercise independent-area.",
+      "retirement": null
+    },
+    {
+      "id": "R036.opening-deductions",
+      "requirement": "R036",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "opening-deductions",
+      "view": null,
+      "expected": "Compute areas/quantities with explicit opening deductions and approximation indicators; report waste separately if included. Explicitly exercise opening-deductions.",
+      "retirement": null
+    },
+    {
+      "id": "R036.approximation",
+      "requirement": "R036",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "approximation",
+      "view": null,
+      "expected": "Compute areas/quantities with explicit opening deductions and approximation indicators; report waste separately if included. Explicitly exercise approximation.",
+      "retirement": null
+    },
+    {
+      "id": "R036.waste-separate",
+      "requirement": "R036",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "waste-separate",
+      "view": null,
+      "expected": "Compute areas/quantities with explicit opening deductions and approximation indicators; report waste separately if included. Explicitly exercise waste-separate.",
+      "retirement": null
+    },
+    {
+      "id": "R037.contract",
+      "requirement": "R037",
+      "release": "v1",
+      "milestone": "M6",
+      "expected": "Export screenshots/rendered views as PNG/JPEG and scene as GLB with correct geometry/material references.",
+      "retirement": null
+    },
+    {
+      "id": "R037.png",
+      "requirement": "R037",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "png",
+      "view": null,
+      "expected": "Export screenshots/rendered views as PNG/JPEG and scene as GLB with correct geometry/material references. Explicitly exercise png.",
+      "retirement": null
+    },
+    {
+      "id": "R037.jpeg",
+      "requirement": "R037",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "jpeg",
+      "view": null,
+      "expected": "Export screenshots/rendered views as PNG/JPEG and scene as GLB with correct geometry/material references. Explicitly exercise jpeg.",
+      "retirement": null
+    },
+    {
+      "id": "R037.glb-units",
+      "requirement": "R037",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "glb-units",
+      "view": null,
+      "expected": "Export screenshots/rendered views as PNG/JPEG and scene as GLB with correct geometry/material references. Explicitly exercise glb-units.",
+      "retirement": null
+    },
+    {
+      "id": "R037.glb-materials",
+      "requirement": "R037",
+      "release": "v1",
+      "milestone": "M6",
+      "variant": "glb-materials",
+      "view": null,
+      "expected": "Export screenshots/rendered views as PNG/JPEG and scene as GLB with correct geometry/material references. Explicitly exercise glb-materials.",
+      "retirement": null
+    },
+    {
+      "id": "R038.contract",
+      "requirement": "R038",
+      "release": "v1",
+      "milestone": "M7",
+      "expected": "Localize interface, messages and outputs; RTL layouts and mixed-direction text preserve numerical/model meaning.",
+      "retirement": null
+    },
+    {
+      "id": "R038.english",
+      "requirement": "R038",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "english",
+      "view": null,
+      "expected": "Localize interface, messages and outputs; RTL layouts and mixed-direction text preserve numerical/model meaning. Explicitly exercise english.",
+      "retirement": null
+    },
+    {
+      "id": "R038.hebrew",
+      "requirement": "R038",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "hebrew",
+      "view": null,
+      "expected": "Localize interface, messages and outputs; RTL layouts and mixed-direction text preserve numerical/model meaning. Explicitly exercise hebrew.",
+      "retirement": null
+    },
+    {
+      "id": "R038.rtl",
+      "requirement": "R038",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "rtl",
+      "view": null,
+      "expected": "Localize interface, messages and outputs; RTL layouts and mixed-direction text preserve numerical/model meaning. Explicitly exercise rtl.",
+      "retirement": null
+    },
+    {
+      "id": "R038.mixed-direction",
+      "requirement": "R038",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "mixed-direction",
+      "view": null,
+      "expected": "Localize interface, messages and outputs; RTL layouts and mixed-direction text preserve numerical/model meaning. Explicitly exercise mixed-direction.",
+      "retirement": null
+    },
+    {
+      "id": "R038.missing-keys",
+      "requirement": "R038",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "missing-keys",
+      "view": null,
+      "expected": "Localize interface, messages and outputs; RTL layouts and mixed-direction text preserve numerical/model meaning. Explicitly exercise missing-keys.",
+      "retirement": null
+    },
+    {
+      "id": "R038.translated-errors",
+      "requirement": "R038",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "translated-errors",
+      "view": null,
+      "expected": "Localize interface, messages and outputs; RTL layouts and mixed-direction text preserve numerical/model meaning. Explicitly exercise translated-errors.",
+      "retirement": null
+    },
+    {
+      "id": "R039.contract",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability.",
+      "retirement": null
+    },
+    {
+      "id": "R039.keyboard",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "keyboard",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise keyboard.",
+      "retirement": null
+    },
+    {
+      "id": "R039.object-list",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "object-list",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise object-list.",
+      "retirement": null
+    },
+    {
+      "id": "R039.numerical-edit",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "numerical-edit",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise numerical-edit.",
+      "retirement": null
+    },
+    {
+      "id": "R039.labels",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "labels",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise labels.",
+      "retirement": null
+    },
+    {
+      "id": "R039.focus",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "focus",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise focus.",
+      "retirement": null
+    },
+    {
+      "id": "R039.contrast",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "contrast",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise contrast.",
+      "retirement": null
+    },
+    {
+      "id": "R039.non-color-warning",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "non-color-warning",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise non-color-warning.",
+      "retirement": null
+    },
+    {
+      "id": "R039.touch",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "touch",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise touch.",
+      "retirement": null
+    },
+    {
+      "id": "R039.screen-reader",
+      "requirement": "R039",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "screen-reader",
+      "view": null,
+      "expected": "Keyboard/object-list/numerical alternatives, labels/focus/contrast, non-color-only errors, touch usability. Explicitly exercise screen-reader.",
+      "retirement": null
+    },
+    {
+      "id": "R040.contract",
+      "requirement": "R040",
+      "release": "v1",
+      "milestone": "M7",
+      "expected": "Preserve literal measurements and uncertainties; demonstrate modeled window/sill/door/beams without inventing resolved angles or totals. The user-labeled actual opening of 70 cm retains an unresolved measurement reference and is not bound to clear passage/frame geometry without clarification.",
+      "retirement": null
+    },
+    {
+      "id": "R040.literal-room",
+      "requirement": "R040",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "literal-room",
+      "view": null,
+      "expected": "Preserve literal measurements and uncertainties; demonstrate modeled window/sill/door/beams without inventing resolved angles or totals. The user-labeled actual opening of 70 cm retains an unresolved measurement reference and is not bound to clear passage/frame geometry without clarification. Explicitly exercise literal-room.",
+      "retirement": null
+    },
+    {
+      "id": "R040.D-discrepancy",
+      "requirement": "R040",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "D-discrepancy",
+      "view": null,
+      "expected": "Preserve literal measurements and uncertainties; demonstrate modeled window/sill/door/beams without inventing resolved angles or totals. The user-labeled actual opening of 70 cm retains an unresolved measurement reference and is not bound to clear passage/frame geometry without clarification. Explicitly exercise D-discrepancy.",
+      "retirement": null
+    },
+    {
+      "id": "R040.unknown-angles",
+      "requirement": "R040",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "unknown-angles",
+      "view": null,
+      "expected": "Preserve literal measurements and uncertainties; demonstrate modeled window/sill/door/beams without inventing resolved angles or totals. The user-labeled actual opening of 70 cm retains an unresolved measurement reference and is not bound to clear passage/frame geometry without clarification. Explicitly exercise unknown-angles.",
+      "retirement": null
+    },
+    {
+      "id": "R040.70-reference",
+      "requirement": "R040",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "70-reference",
+      "view": null,
+      "expected": "Preserve literal measurements and uncertainties; demonstrate modeled window/sill/door/beams without inventing resolved angles or totals. The user-labeled actual opening of 70 cm retains an unresolved measurement reference and is not bound to clear passage/frame geometry without clarification. Explicitly exercise 70-reference.",
+      "retirement": null
+    },
+    {
+      "id": "R040.beam-spacing",
+      "requirement": "R040",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "beam-spacing",
+      "view": null,
+      "expected": "Preserve literal measurements and uncertainties; demonstrate modeled window/sill/door/beams without inventing resolved angles or totals. The user-labeled actual opening of 70 cm retains an unresolved measurement reference and is not bound to clear passage/frame geometry without clarification. Explicitly exercise beam-spacing.",
+      "retirement": null
+    },
+    {
+      "id": "R040.embedment",
+      "requirement": "R040",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "embedment",
+      "view": null,
+      "expected": "Preserve literal measurements and uncertainties; demonstrate modeled window/sill/door/beams without inventing resolved angles or totals. The user-labeled actual opening of 70 cm retains an unresolved measurement reference and is not bound to clear passage/frame geometry without clarification. Explicitly exercise embedment.",
+      "retirement": null
+    },
+    {
+      "id": "R040.window-reference",
+      "requirement": "R040",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "window-reference",
+      "view": null,
+      "expected": "Preserve literal measurements and uncertainties; demonstrate modeled window/sill/door/beams without inventing resolved angles or totals. The user-labeled actual opening of 70 cm retains an unresolved measurement reference and is not bound to clear passage/frame geometry without clarification. Explicitly exercise window-reference.",
+      "retirement": null
+    },
+    {
+      "id": "R041.contract",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions.",
+      "retirement": null
+    },
+    {
+      "id": "R041.desktop-20ms",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "desktop-20ms",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise desktop-20ms.",
+      "retirement": null
+    },
+    {
+      "id": "R041.tablet-33ms",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "tablet-33ms",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise tablet-33ms.",
+      "retirement": null
+    },
+    {
+      "id": "R041.input-100ms",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "input-100ms",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise input-100ms.",
+      "retirement": null
+    },
+    {
+      "id": "R041.cached-load-5s",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "cached-load-5s",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise cached-load-5s.",
+      "retirement": null
+    },
+    {
+      "id": "R041.save-2s",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "save-2s",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise save-2s.",
+      "retirement": null
+    },
+    {
+      "id": "R041.asset-failure",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "asset-failure",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise asset-failure.",
+      "retirement": null
+    },
+    {
+      "id": "R041.stress",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "stress",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise stress.",
+      "retirement": null
+    },
+    {
+      "id": "R041.dispose",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "dispose",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise dispose.",
+      "retirement": null
+    },
+    {
+      "id": "R041.cancel",
+      "requirement": "R041",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "cancel",
+      "view": null,
+      "expected": "Meet frozen named-device budgets; remain responsive with loading failures and stress scenes without changing dimensions. Explicitly exercise cancel.",
+      "retirement": null
+    },
+    {
+      "id": "R042.contract",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1.",
+      "retirement": null
+    },
+    {
+      "id": "R042.toolchain",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "toolchain",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise toolchain.",
+      "retirement": null
+    },
+    {
+      "id": "R042.static-build",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "static-build",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise static-build.",
+      "retirement": null
+    },
+    {
+      "id": "R042.clean-bootstrap",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "clean-bootstrap",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise clean-bootstrap.",
+      "retirement": null
+    },
+    {
+      "id": "R042.ci",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "ci",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise ci.",
+      "retirement": null
+    },
+    {
+      "id": "R042.dependency-license",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "dependency-license",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise dependency-license.",
+      "retirement": null
+    },
+    {
+      "id": "R042.compatibility",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "compatibility",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise compatibility.",
+      "retirement": null
+    },
+    {
+      "id": "R042.S01",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "S01",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise S01.",
+      "retirement": null
+    },
+    {
+      "id": "R042.S02",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "S02",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise S02.",
+      "retirement": null
+    },
+    {
+      "id": "R042.S03",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "S03",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise S03.",
+      "retirement": null
+    },
+    {
+      "id": "R042.S04",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "S04",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise S04.",
+      "retirement": null
+    },
+    {
+      "id": "R042.S05",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "S05",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise S05.",
+      "retirement": null
+    },
+    {
+      "id": "R042.S06",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "S06",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise S06.",
+      "retirement": null
+    },
+    {
+      "id": "R042.G01",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "G01",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise G01.",
+      "retirement": null
+    },
+    {
+      "id": "R042.G02",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "G02",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise G02.",
+      "retirement": null
+    },
+    {
+      "id": "R042.G03",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "G03",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise G03.",
+      "retirement": null
+    },
+    {
+      "id": "R042.G04",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "G04",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise G04.",
+      "retirement": null
+    },
+    {
+      "id": "R042.G05",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "G05",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise G05.",
+      "retirement": null
+    },
+    {
+      "id": "R042.G06",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "G06",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise G06.",
+      "retirement": null
+    },
+    {
+      "id": "R042.P01",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "P01",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise P01.",
+      "retirement": null
+    },
+    {
+      "id": "R042.P02",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "P02",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise P02.",
+      "retirement": null
+    },
+    {
+      "id": "R042.P03",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "P03",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise P03.",
+      "retirement": null
+    },
+    {
+      "id": "R042.P04",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "P04",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise P04.",
+      "retirement": null
+    },
+    {
+      "id": "R042.P05",
+      "requirement": "R042",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "P05",
+      "view": null,
+      "expected": "Establish AGENTS.md, pinned toolchain, useful scripts, contribution docs and reproducible static build; record dependency versions/compatibility/licenses; complete bounded M0 measurement-constraint, geometry and PDF proofs and ADRs before architecture selection. A complete integrated consumer editor is first required in M1. Explicitly exercise P05.",
+      "retirement": null
+    },
+    {
+      "id": "R043.contract",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity.",
+      "retirement": null
+    },
+    {
+      "id": "R043.missing-id",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "missing-id",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise missing-id.",
+      "retirement": null
+    },
+    {
+      "id": "R043.duplicate-id",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "duplicate-id",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise duplicate-id.",
+      "retirement": null
+    },
+    {
+      "id": "R043.zero-report",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "zero-report",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise zero-report.",
+      "retirement": null
+    },
+    {
+      "id": "R043.wrong-source",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "wrong-source",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise wrong-source.",
+      "retirement": null
+    },
+    {
+      "id": "R043.wrong-build",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "wrong-build",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise wrong-build.",
+      "retirement": null
+    },
+    {
+      "id": "R043.stale-manual",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "stale-manual",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise stale-manual.",
+      "retirement": null
+    },
+    {
+      "id": "R043.removed-row",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "removed-row",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise removed-row.",
+      "retirement": null
+    },
+    {
+      "id": "R043.v2-counted-v1",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "v2-counted-v1",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise v2-counted-v1.",
+      "retirement": null
+    },
+    {
+      "id": "R043.required-skip",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "required-skip",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise required-skip.",
+      "retirement": null
+    },
+    {
+      "id": "R043.paired-deletion",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "paired-deletion",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise paired-deletion.",
+      "retirement": null
+    },
+    {
+      "id": "R043.retired-obligation",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "retired-obligation",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise retired-obligation.",
+      "retirement": null
+    },
+    {
+      "id": "R043.partial-family",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "partial-family",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise partial-family.",
+      "retirement": null
+    },
+    {
+      "id": "R043.ikea-explained-failure",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "ikea-explained-failure",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise ikea-explained-failure.",
+      "retirement": null
+    },
+    {
+      "id": "R043.evidence-store-separation",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "evidence-store-separation",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise evidence-store-separation.",
+      "retirement": null
+    },
+    {
+      "id": "R043.source-invalidation",
+      "requirement": "R043",
+      "release": "v1",
+      "milestone": "M0",
+      "variant": "source-invalidation",
+      "view": null,
+      "expected": "Maintain a versioned mandatory obligation inventory independent of tests/mappings and compare against its approved baseline. Every v1 obligation requires candidate-bound evidence; paired test/mapping deletion, unapproved obligation retirement, partial-family coverage, skipped cases and stale candidate identity fail the release gate. Evidence-store identity is separate from tested-source identity. Explicitly exercise source-invalidation.",
+      "retirement": null
+    },
+    {
+      "id": "R044.contract",
+      "requirement": "R044",
+      "release": "v1",
+      "milestone": "M7",
+      "expected": "Promote the exact tested static artifact identified by clean source commit, build digest, catalog hashes and acceptance-inventory digest; retain attestations in a separate store/branch and verify rollback/compatibility handling. Evidence attachment does not modify the tested subject.",
+      "retirement": null
+    },
+    {
+      "id": "R044.clean-candidate",
+      "requirement": "R044",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "clean-candidate",
+      "view": null,
+      "expected": "Promote the exact tested static artifact identified by clean source commit, build digest, catalog hashes and acceptance-inventory digest; retain attestations in a separate store/branch and verify rollback/compatibility handling. Evidence attachment does not modify the tested subject. Explicitly exercise clean-candidate.",
+      "retirement": null
+    },
+    {
+      "id": "R044.exact-artifact",
+      "requirement": "R044",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "exact-artifact",
+      "view": null,
+      "expected": "Promote the exact tested static artifact identified by clean source commit, build digest, catalog hashes and acceptance-inventory digest; retain attestations in a separate store/branch and verify rollback/compatibility handling. Evidence attachment does not modify the tested subject. Explicitly exercise exact-artifact.",
+      "retirement": null
+    },
+    {
+      "id": "R044.catalog-hashes",
+      "requirement": "R044",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "catalog-hashes",
+      "view": null,
+      "expected": "Promote the exact tested static artifact identified by clean source commit, build digest, catalog hashes and acceptance-inventory digest; retain attestations in a separate store/branch and verify rollback/compatibility handling. Evidence attachment does not modify the tested subject. Explicitly exercise catalog-hashes.",
+      "retirement": null
+    },
+    {
+      "id": "R044.inventory-hash",
+      "requirement": "R044",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "inventory-hash",
+      "view": null,
+      "expected": "Promote the exact tested static artifact identified by clean source commit, build digest, catalog hashes and acceptance-inventory digest; retain attestations in a separate store/branch and verify rollback/compatibility handling. Evidence attachment does not modify the tested subject. Explicitly exercise inventory-hash.",
+      "retirement": null
+    },
+    {
+      "id": "R044.manual-acceptance",
+      "requirement": "R044",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "manual-acceptance",
+      "view": null,
+      "expected": "Promote the exact tested static artifact identified by clean source commit, build digest, catalog hashes and acceptance-inventory digest; retain attestations in a separate store/branch and verify rollback/compatibility handling. Evidence attachment does not modify the tested subject. Explicitly exercise manual-acceptance.",
+      "retirement": null
+    },
+    {
+      "id": "R044.rollback",
+      "requirement": "R044",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "rollback",
+      "view": null,
+      "expected": "Promote the exact tested static artifact identified by clean source commit, build digest, catalog hashes and acceptance-inventory digest; retain attestations in a separate store/branch and verify rollback/compatibility handling. Evidence attachment does not modify the tested subject. Explicitly exercise rollback.",
+      "retirement": null
+    },
+    {
+      "id": "R044.forward-file-recovery",
+      "requirement": "R044",
+      "release": "v1",
+      "milestone": "M7",
+      "variant": "forward-file-recovery",
+      "view": null,
+      "expected": "Promote the exact tested static artifact identified by clean source commit, build digest, catalog hashes and acceptance-inventory digest; retain attestations in a separate store/branch and verify rollback/compatibility handling. Evidence attachment does not modify the tested subject. Explicitly exercise forward-file-recovery.",
+      "retirement": null
+    },
+    {
+      "id": "R045.contract",
+      "requirement": "R045",
+      "release": "v2",
+      "milestone": "V2",
+      "expected": "Real browser agent inspects/edits/places through shared commands, handles ambiguity/stale proposals and preserves preview/undo.",
+      "retirement": null
+    },
+    {
+      "id": "R046.contract",
+      "requirement": "R046",
+      "release": "later",
+      "milestone": "Future",
+      "expected": "Author several material regions on one wall face using preserved extension infrastructure.",
+      "retirement": null
+    },
+    {
+      "id": "R047.contract",
+      "requirement": "R047",
+      "release": "later",
+      "milestone": "Future",
+      "expected": "Add further countries without substituting identities/options/prices across markets.",
+      "retirement": null
+    },
+    {
+      "id": "R048.contract",
+      "requirement": "R048",
+      "release": "later",
+      "milestone": "Future",
+      "expected": "Community importer extension can safely produce compatible objects from user-selected files; first-party importer not required for v1.",
+      "retirement": null
+    },
+    {
+      "id": "R049.contract",
+      "requirement": "R049",
+      "release": "later",
+      "milestone": "Future",
+      "expected": "Represent configurable wardrobe/shelving combinations beyond individual articles.",
+      "retirement": null
+    },
+    {
+      "id": "R050.contract",
+      "requirement": "R050",
+      "release": "later",
+      "milestone": "Future",
+      "expected": "Add drawer/cabinet movement and walking clearance checks beyond v1 door motion.",
+      "retirement": null
+    }
+  ]
+}

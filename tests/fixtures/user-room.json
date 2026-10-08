@@ -1,0 +1,61 @@
+{
+  "label": "user-measured-unresolved",
+  "unit": "cm",
+  "walls": {
+    "A": 206,
+    "B": 306,
+    "C": 217,
+    "D": 306
+  },
+  "segments": {
+    "B": [
+      66,
+      91,
+      149
+    ],
+    "D": [
+      105,
+      91,
+      111
+    ]
+  },
+  "door": {
+    "actualOpening": 70,
+    "reference": "unresolved",
+    "height": null,
+    "openingDirection": "inward toward A"
+  },
+  "ceiling": 237,
+  "beamsBD": {
+    "count": 6,
+    "underside": 224,
+    "height": 14,
+    "width": 9,
+    "spacing": 56,
+    "spacingReference": "unresolved",
+    "placement": "one flush against C"
+  },
+  "beamAC": {
+    "underside": 204,
+    "height": 19,
+    "distanceFromB": 24,
+    "width": null,
+    "distanceReference": "unresolved"
+  },
+  "window": {
+    "height": 162,
+    "fixedLowerHeight": 30,
+    "sillTop": 47,
+    "widthRegion": 91,
+    "frameReference": "unresolved",
+    "upperOpening": "half nearer A slides over other half"
+  },
+  "sill": {
+    "approximateDepth": 23,
+    "protrusion": 10,
+    "wallThickness": 15,
+    "frameAllowance": 2
+  },
+  "angles": "unknown",
+  "embedment": "unresolved"
+}

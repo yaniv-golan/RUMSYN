@@ -1,0 +1,33 @@
+{
+  "name": "rumsyn",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": "24.18.0"
+  },
+  "scripts": {
+    "doctor": "node scripts/doctor.mjs",
+    "dev": "vite apps/web --host 127.0.0.1",
+    "build": "vite build apps/web --outDir ../../dist --emptyOutDir",
+    "preview": "vite preview apps/web --outDir ../../dist --host 127.0.0.1",
+    "check": "node scripts/check.mjs",
+    "req:check": "node scripts/requirements.mjs",
+    "req:report": "node scripts/requirements.mjs --report",
+    "release:check": "node scripts/requirements.mjs --release",
+    "test:unit": "node scripts/unit-evidence.mjs",
+    "fixture:check": "node scripts/fixture-check.mjs",
+    "proof:browser": "node scripts/browser-proofs.mjs"
+  },
+  "devDependencies": {
+    "vite": "8.3.4",
+    "vitest": "5.0.3",
+    "playwright": "1.64.0"
+  },
+  "dependencies": {
+    "manifold-3d": "3.5.4",
+    "polygon-clipping": "0.15.7",
+    "jspdf": "4.2.1"
+  }
+}
