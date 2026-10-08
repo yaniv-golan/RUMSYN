@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "version": "seed-2026-10-08",
+  "country": "IL",
+  "products": [
+    {
+      "identity": "ikea:IL:30449908:white",
+      "article": "304.499.08",
+      "name": "LACK שולחן צד",
+      "sourceUrl": "https://www.ikea.com/il/he/p/lack-side-table-white-30449908/",
+      "retrieved": "2026-10-08",
+      "dimensions": {
+        "width": 55,
+        "depth": 55,
+        "height": 45,
+        "unit": "cm"
+      },
+      "geometry": "generic-table",
+      "provenance": {
+        "dimensions": "source",
+        "geometry": "generic"
+      },
+      "color": "#ffffff",
+      "price": 65,
+      "currency": "ILS"
+    }
+  ]
+}

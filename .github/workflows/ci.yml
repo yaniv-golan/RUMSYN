@@ -1,4 +1,4 @@
-name: M0 local-equivalent checks
+name: Bounded source-bound checks
 on:
   push:
   pull_request:
@@ -27,10 +27,12 @@ jobs:
       - run: pnpm req:check
       - run: pnpm build
       - run: pnpm test:unit
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:workflow
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: m0-unit-and-static-artifact
+          name: bounded-unit-workflow-and-static-artifact
           path: |
             artifacts/
             dist/

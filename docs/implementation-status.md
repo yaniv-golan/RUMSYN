@@ -55,3 +55,15 @@ Manager E01 contradictory diagonal, E02 cross-project history, E03 >1000-edit ar
 
 Remaining M1 gaps include full catalog producer/consumer publication and immutable remote fetch/CORS, complete plugin registry/assets, real-device/browser matrix, robust recovery/storage quota/file safety, accessibility/localized errors, wall exterior/plan consistency and room/furniture visual usability. The one-product fixture cannot attest full IKEA eligibility. No per-requirement verification or milestone closure follows from these tests.
 
+
+## Next M1 increment
+
+Automatic camera-facing wall fading uses25% opacity with edges, openings and opaque far walls retained. Solid-wall override and fit/reset are view-only and do not alter materials or history. The CI workflow now installs Chromium and runs the owned-server consumer workflow, preserving artifacts on failure; hosted results for this increment remain pending.
+
+The data-only plugin installer presents publisher/repository/version/country/origin before explicit install, pins raw manifest commit, verifies bounded versioned Pages catalog bytes, and checks cached content before import. Dexie1→2 adds a plugin table; local browser migration and fixture install/remove retain existing products. Prepared producer payload is development one-product data only. Real public remote/CORS proof remains pending manager publication. Full provider dispatch, updates, assets, denominator, gated producer deployment/rollback and devices remain open.
+
+Strict portable archive checks now enforce one native entry, consistent local/central directory sizes, bounded output and CRC. Data descriptors, ZIP64, multi-disk archives and extra entries are rejected as unsupported. Project format1 is unchanged and native exported files retain executable history.
+
+User-requested IKEA visual study is copied under docs/reviews/ikea-visual-ux.md as design input only. A persistent large canvas and single active task panel are the next UX adaptation; no observed IKEA interaction substitutes for our accessibility/device evidence.
+
+Real Chromium public-repository review/install/import/place/remove and fresh-profile sharing succeeded against producer commit be681b653b93c1c34c25a9df102043d058a9acd6, recording response URLs/statuses/SHA/CORS headers separately in artifacts/workflow-public/report.json. Catalog hash24634f48116e18341ec9f13d185ec84dc2ea9d3528addbe7b06dfc95b7e0bd56 matched. This is one generic seed, not full IKEA coverage or asset qualification. Manager's manifest-plus-catalog cache mutation witness prompted accepted raw-manifest byte verification and parsed/raw consistency checks; final candidate evidence must be refreshed after that correction.

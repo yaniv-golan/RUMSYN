@@ -13,3 +13,9 @@
 - User direction: “WebMCP can be deferred to the 2nd release”.
 - New release boundary: native WebMCP tooling, browser/agent integration, and AI conversation acceptance move to v2.
 - V1 keeps a shared editing command layer for validation, preview, mutation, and undo because both UI views need it. Native WebMCP access or tests are not a v1 prerequisite.
+
+## 2026-10-08: camera-facing wall visibility
+
+- User marked the two near-side walls in the3D preview and requested semi-transparency for walls facing the viewer.
+- Use automatic camera-relative semi-transparency for near-side walls while retaining opaque far walls; update as the user orbits.
+- This is a viewing behavior, not a change to room geometry, assigned materials, or exported dimensions. It replaces the earlier implementation suggestion to hide near walls entirely.

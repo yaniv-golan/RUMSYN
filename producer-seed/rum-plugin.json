@@ -1,0 +1,17 @@
+{
+  "contractVersion": 1,
+  "id": "ikea-il",
+  "publisher": "yaniv-golan / RUMSYN community",
+  "country": "IL",
+  "compatibility": {
+    "catalogSchema": 1
+  },
+  "origins": [
+    "https://yaniv-golan.github.io"
+  ],
+  "catalog": {
+    "version": "seed-2026-10-08",
+    "url": "https://yaniv-golan.github.io/RUMSYN-ikea-israel/data/seed-2026-10-08/catalog.json",
+    "sha256": "24634f48116e18341ec9f13d185ec84dc2ea9d3528addbe7b06dfc95b7e0bd56"
+  }
+}
