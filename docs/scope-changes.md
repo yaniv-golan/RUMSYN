@@ -19,3 +19,9 @@
 - User marked the two near-side walls in the3D preview and requested semi-transparency for walls facing the viewer.
 - Use automatic camera-relative semi-transparency for near-side walls while retaining opaque far walls; update as the user orbits.
 - This is a viewing behavior, not a change to room geometry, assigned materials, or exported dimensions. It replaces the earlier implementation suggestion to hide near walls entirely.
+
+## 2026-10-08: IKEA-inspired consumer UI
+
+- User requested a vision subagent exploration of IKEA home-design and adoption of its best UI ideas, then asked to confirm this remains in the plan.
+- Release1 includes the adapted persistent canvas/focused panels, illustrated room presets, stable view controls, contextual properties, and searchable product cards with options/provenance. See delivery-plan3.5 and reviews/ikea-visual-ux.md for milestone mapping and observation limits.
+- Existing partial implementation does not remove the remaining illustrated preset, richer catalog browsing, measurement guidance, project/layout, accessibility or device requirements. No IKEA branding/assets or account/scan workflow is required by this adaptation.

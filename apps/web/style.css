@@ -10,3 +10,9 @@
 
 .draft-canvas-wrap{height:100%;display:flex;flex-direction:column}.draft-canvas-wrap>button{align-self:flex-start;margin:10px 20px}.draft-canvas-wrap .draft-plan{flex:1;min-height:0}.draft-caption{padding:0 20px;color:#607080;font-size:13px}
 .canvas-wrap{position:relative}.draft-canvas-wrap{position:absolute;inset:0;height:auto}.draft-canvas-wrap .draft-plan{height:0;flex:1;min-height:0}
+
+.field-error{font-size:13px;color:#92382a;margin:5px 0 10px}.react-aria-TextField[data-invalid] input{border-color:#92382a}
+
+.preset-choices{display:flex;gap:8px}.preset-card{display:flex!important;flex:1;flex-direction:column;align-items:center;border:1px solid #a7b2c2;border-radius:6px;padding:8px;min-height:110px;cursor:pointer}.preset-card:has(input:checked){border:2px solid #294967;background:#edf2f7}.preset-card:focus-within{outline:3px solid #294967;outline-offset:2px}.preset-card svg{width:90px;max-width:100%;height:70px}.preset-card input{width:auto}.preset-card span{font-size:14px}
+
+.draft-notice{font-size:13px;border-inline-start:3px solid #294967;padding-inline-start:8px;color:#294967}

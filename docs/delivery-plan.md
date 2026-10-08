@@ -74,6 +74,20 @@ Use PBR materials, color/texture controls, physically interpretable dimensions, 
 
 Export from the domain model rather than scrape the display mesh: dimensioned floor plans/elevations, schedules, quantities, and shopping lists must agree with saved state. Proposed v1 format matrix: PDF, SVG, DXF, CSV, PNG/JPEG, GLB, and native `.rumsyn`. GLB is a visual scene export, not an editable native-project replacement. Include scale/unit legends and approximation markers; embed a Hebrew-capable font and verify RTL text in actual PDFs. Document opening deductions and waste allowance separately from measured area. Verify scale in an independent viewer/printed calibration fixture.
 
+### 3.5 IKEA-inspired consumer UI delivery
+
+The user's requested visual study is part of release1 design, documented in [the IKEA visual UX review](reviews/ikea-visual-ux.md). Adapt the observed interaction patterns without copying branding/assets or introducing account, scanning, or shopping requirements. The existing requirement IDs remain authoritative; a nicer shell alone does not satisfy their full behavior.
+
+| Delivery area | Required adaptation | Milestone and acceptance focus |
+|---|---|---|
+| Editor shell | Persistent large canvas beside one active task panel; selecting an object exposes contextual properties | M1/M2; all actions remain reachable, stable scene, keyboard focus, tablet and Hebrew RTL (R002/R011/R039) |
+| Room creation | Illustrated, labeled preset outlines with clear selection; preview beside measurements; preset/draw/wall-by-wall refinement paths | M2; a text dropdown alone is not the final illustrated preset UI, and unknown angles stay explicit (R004/R005/R009/R010) |
+| View controls | Stable2D/3D, fit/reset and zoom controls; camera-relative semi-transparent near walls with solid-wall override | M1/M2; orbit updates opacity, view controls preserve geometry/materials/history (R003/R011/R039) |
+| Furniture library | URL import, search/category controls and product cards with thumbnail or clearly labeled generic representation, dimensions, selected variant and provenance; options retain scene context | M4/M5; real catalog variants/materials/placement and verified/inferred/generic distinctions, not one seeded card (R018/R022/R023/R026/R027) |
+| Project actions and help | Persistent project/layout identity, explicit Save/Open, undo/redo and recovery status; optional nonblocking guidance and skip links | M5/M6; portable layouts/history, no hidden autosave claim, no onboarding covering essential actions (R029-R032/R038/R039) |
+
+Review the rendered consumer workflows at desktop/tablet sizes and in Hebrew RTL at each affected milestone. Physical-device and assistive-technology evidence remain separate from browser emulation. Track unfinished adaptations in milestone review records until verified; do not treat their mention in this plan as implementation completion.
+
 ## 4. IKEA Israel and public plugin delivery
 
 ### 4.1 Repository and runtime model

@@ -1,3 +1,4 @@
+import {parseMeasurement} from './units.js';
 import {validateRoom} from './room.js';
 export const SCHEMA_VERSION = 2;
 export const TOLERANCE_CM = 1e-6;
@@ -12,9 +13,8 @@ export function measurement(value, source = 'entered') {
   return {value, unit: 'cm', source};
 }
 export function parseLength(input) {
-  const match = /^\s*(\d+(?:\.\d+)?)\s*(cm|mm|m|in|ft)\s*$/.exec(input);
-  if (!match) throw new Error('Enter a positive number with cm, mm, m, in, or ft');
-  return dimension(Number(match[1]) * {cm:1, mm:0.1, m:100, in:2.54, ft:30.48}[match[2]]);
+  if(typeof input!=='string'||!/(?:cm|mm|m|in|ft|[\'"′″])\s*$/i.test(input))throw new Error('Enter an explicit measurement unit');
+  return dimension(parseMeasurement(input));
 }
 export function validateState(state) {
   if (![1,SCHEMA_VERSION].includes(state.schemaVersion) || !Number.isSafeInteger(state.revision) || state.revision < 0) throw new Error('Invalid model version/revision');
