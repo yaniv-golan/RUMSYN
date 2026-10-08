@@ -27,7 +27,7 @@ export function solveQuadrilateral({sides, diagonal, orientation}) {
   if (!['clockwise','counterclockwise'].includes(orientation)) return {status:'ambiguous', alternatives:[coordinates,coordinates.map(([x,y])=>[x,-y])], reason:'Select known orientation; convex branch assumed explicitly'};
   return {status:'solved', coordinates:orientation === 'clockwise' ? coordinates : coordinates.map(([x,y])=>[x,-y]), assumptions:['convex quadrilateral'], residualCm:0};
 }
-export function reconcileSegments({wallId,total,segments}) {
+export function reconcileSegments({wallId,total,segments,attachments=[]}) {
   dimension(total.value);
   segments.forEach(x=>dimension(x.value));
   const sum = segments.reduce((s,x)=>s+x.value,0);
@@ -36,5 +36,20 @@ export function reconcileSegments({wallId,total,segments}) {
   const choices = [];
   if (!total.locked) choices.push({target:'total',oldValue:total.value,newValue:sum,residualCm:0,reason:'Match supplied segment sum; measurement accuracy is unknown'});
   for (const part of segments) if (!part.locked && part.value-residual > 0) choices.push({target:part.id,oldValue:part.value,newValue:part.value-residual,residualCm:0,reason:'Match supplied total; measurement accuracy is unknown'});
-  return {status:choices.length?'contradictory':'no_allowed_repair',wallId,residualCm:residual,conflicts:['total',...segments.map(x=>x.id)],choices};
+  const unavailable=[];
+  const feasible=choices.filter(choice=>{
+    const proposedTotal=choice.target==='total'?choice.newValue:total.value;
+    const proposedSegments=segments.map(part=>part.id===choice.target?{...part,value:choice.newValue}:part);
+    const conflict=attachments.find(a=>{
+      if(a.offset<0 || a.offset+a.width>proposedTotal+TOLERANCE_CM)return true;
+      const index=proposedSegments.findIndex(part=>part.id===a.segmentId);
+      if(index<0)return false;
+      if(a.width>proposedSegments[index].value+TOLERANCE_CM)return true;
+      const offset=proposedSegments.slice(0,index).reduce((sum,part)=>sum+part.value,0)+(a.offsetWithinSegment??0);
+      return a.lockedOffset && Math.abs(offset-a.offset)>TOLERANCE_CM;
+    });
+    if(conflict){unavailable.push({...choice,reason:`Repair conflicts with attachment ${conflict.id}; dimensions/locked position retained`});return false;}
+    return true;
+  });
+  return {status:feasible.length?'contradictory':'no_allowed_repair',wallId,residualCm:residual,conflicts:['total',...segments.map(x=>x.id)],choices:feasible,unavailable};
 }

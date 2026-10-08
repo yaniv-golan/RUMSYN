@@ -1,5 +1,5 @@
 name: Bug
-about: Describe observable behavior with reproduction steps
+description: Describe observable behavior with reproduction steps
 body:
   - type: textarea
     id: reproduction

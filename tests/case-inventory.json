@@ -34,7 +34,9 @@
     "S02 manager witness: concave branch never mislabeled convex",
     "S03 R040: measured D discrepancy is one cm with no automatic correction",
     "S04 R010 R012: incompatible locks and opening conflict preserve all inputs",
+    "S04 S05 R010 R012: mixed locks and every offered repair independently feasible",
     "S05 R010: repair choices enumerate old/new/residual and require explicit apply",
+    "S05 R012: attachment-breaking repair is unavailable, never offered feasible",
     "S06 R031: cancel, stale/replayed preview, reopen undo and attachments"
   ]
 }

@@ -6,7 +6,7 @@ M0: in_progress, qualified local draft; not closed. Local branch codex/m0; check
 
 ## Local results
 
-- 35 meaningful unit cases: bounded solver/commands (8), geometry candidates (6), traceability negatives (21). Revision-aware apply/cancel/undo/redo, stale/replayed preview rejection, positive finite centimeters and provenance are implemented in bounded contracts.
+- 37 meaningful unit cases: bounded solver/commands (10), geometry candidates (6), traceability negatives (21). Revision-aware apply/cancel/undo/redo, stale/replayed preview rejection, positive finite centimeters and provenance are implemented in bounded contracts.
 - Structural inventory and literal-room integrity checks pass. The fixture retains 306 vs 307, unknown angles, 70cm unresolved reference, inward-toward-A opening, beam flush against C, unknown spacing/width and 1cm embedment.
 - Static harness builds. Chromium156 on macOS arm64 executes WASM geometry, browser-generated PDFs, and IndexedDB save/reload/history undo. All source-bound runner reports identify exact source/build files. HTML uses minimal accessible buttons; this is not the editor.
 - Independent PDF checks measure 50.000mm calibration at 1:20 on A4 landscape/A3 portrait; all drawing/text bounds fit, linked70-row schedules wrap/repeat headers, English identifiers/prices and Hebrew short-label extraction survive. Poppler visual review is a separate bounded check. Physical print/mobile viewers remain not_run.
@@ -18,10 +18,10 @@ M0: in_progress, qualified local draft; not closed. Local branch codex/m0; check
 | Proof | Current result and limits |
 | --- | --- |
 | S01 | Pass in bounded four-side harness; no right angles invented |
-| S02 | Pass for synthetic convex diagonal/orientation and mirror ambiguity; concave witness rejected; general solver not selected |
+| S02 | Pass for synthetic convex diagonal/orientation and mirror ambiguity; concave witness rejected; full general solver remains M2 |
 | S03 | Pass: D residual1cm, inputs retained |
-| S04 | Partial: conflicting segment locks, impossible diagonal and attachment fit; fixed-angle/general constraint conflicts unproven |
-| S05 | Partial: explicit total repair with before/after/residual; general angle/segment repair priorities unproven |
+| S04 | Bounded pass: mixed/conflicting segment locks, impossible diagonal and attachment fit; full angle/concave solver belongs M2 |
+| S05 | Bounded pass: each offered choice independently reconciles totals, preserves mixed locks and fits attachments; unavailable attachment-breaking choices labeled; explicit total apply/undo |
 | S06 | Pass in bounded session plus browser recovery/reopen undo; unsafe-file/migration qualification later |
 | G01 | Bounded analytical planar/solid comparisons pass |
 | G02 | Partial: polygon offsets/reversed winding and curved annulus; curved joins/topology qualification incomplete |
@@ -37,7 +37,7 @@ M0: in_progress, qualified local draft; not closed. Local branch codex/m0; check
 
 ## Outstanding work and dependencies
 
-Locally actionable M0 work: full measurement lock/repair proof, remaining geometry subcases/cancellation/memory experiments, trusted release-report ingestion plus accepted case-to-obligation/evidence-kind/device mapping, dependency maintenance/compatibility review, IKEA discovery denominator and real published plugin fetch/asset proof. Per-requirement statuses must require all mandatory obligations; the pure gate has a completeness guard, but manual/device policy still needs implementation. No complete acceptance claim follows from a parent row or a passing test alone.
+Locally actionable M0 work: remaining geometry subcases/cancellation/memory experiments, trusted release-report ingestion plus accepted case-to-obligation/evidence-kind/device mapping, dependency maintenance/compatibility review, IKEA discovery denominator and real published plugin fetch/asset proof. Per-requirement statuses must require all mandatory obligations; the pure gate has a completeness guard, but manual/device policy still needs implementation. No complete acceptance claim follows from a parent row or a passing test alone.
 
 External/human dependencies: iPhone available for later user acceptance; physical iPad/Android tablet devices unavailable; actual-size print; application destination known (yaniv-golan/RUMSYN) and GitHub Pages selected; separate producer destination/asset redistribution terms still unresolved; real-room clarifications. No measurements, destination or permission is invented. Unavailable devices/public hosting do not block independent local work, but M0 stays qualified until required proof is resolved.
 

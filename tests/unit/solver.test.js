@@ -49,3 +49,23 @@ test('S02 manager witness: concave branch never mislabeled convex',()=>{
  const turns=p.map((a,i)=>{const b=p[(i+1)%4],c=p[(i+2)%4];return(b[0]-a[0])*(c[1]-b[1])-(b[1]-a[1])*(c[0]-b[0]);});
  expect(turns.some(v=>v<0)&&turns.some(v=>v>0)).toBe(true);
 });
+test('S04 S05 R010 R012: mixed locks and every offered repair independently feasible',()=>{
+ const locked=structuredClone(input);locked.segments[0].locked=true;locked.segments[1].locked=true;
+ locked.attachments=[{id:'window',segmentId:'window',width:91,offset:105,lockedOffset:true}];
+ const before=structuredClone(locked),r=reconcileSegments(locked);
+ expect(r.choices.map(c=>c.target)).toEqual(['total','D3']);
+ for(const choice of r.choices){
+   const candidate=structuredClone(locked);
+   if(choice.target==='total')candidate.total.value=choice.newValue;else candidate.segments.find(p=>p.id===choice.target).value=choice.newValue;
+   expect(candidate.segments.reduce((sum,p)=>sum+p.value,0)).toBe(candidate.total.value);
+   expect(candidate.segments.slice(0,2)).toEqual(before.segments.slice(0,2));
+   expect(candidate.attachments[0].offset+candidate.attachments[0].width).toBeLessThanOrEqual(candidate.total.value);
+   expect(choice.oldValue).toBe(choice.target==='total'?306:111);expect(choice.residualCm).toBe(0);expect(choice.reason.length).toBeGreaterThan(0);
+ }
+ expect(locked).toEqual(before);
+});
+test('S05 R012: attachment-breaking repair is unavailable, never offered feasible',()=>{
+ const measured={wallId:'synthetic',total:{value:306},segments:[{id:'solid',value:205,locked:true},{id:'opening',value:100,locked:true}],attachments:[{id:'fixed-end',offset:296,width:10}]};
+ const before=structuredClone(measured),r=reconcileSegments(measured);
+ expect(r.status).toBe('no_allowed_repair');expect(r.choices).toEqual([]);expect(r.unavailable[0]).toMatchObject({target:'total',oldValue:306,newValue:305});expect(r.unavailable[0].reason).toContain('fixed-end');expect(measured).toEqual(before);
+});
