@@ -1,0 +1,2114 @@
+{
+  "engineCommit": "54a23abdca0297e503bdb584619fe2eef7537fea",
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "file": "public-seed-v1-cursor-0.rumsyn",
+      "sha256": "930df027eb1174ba1d20f3a47fef559ed5b70a49eb2802362a8f332e70bbce3b",
+      "cursor": 0,
+      "historyLength": 7,
+      "before": {
+        "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+        "schemaVersion": 1,
+        "revision": 18,
+        "walls": [],
+        "attachments": [],
+        "furniture": [],
+        "room": null
+      },
+      "afterUndo": {
+        "cursor": 0,
+        "state": {
+          "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+          "schemaVersion": 1,
+          "revision": 18,
+          "walls": [],
+          "attachments": [],
+          "furniture": [],
+          "room": null
+        }
+      },
+      "afterRedo": {
+        "cursor": 1,
+        "state": {
+          "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+          "schemaVersion": 1,
+          "revision": 19,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 400,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [],
+          "furniture": [],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                302.77777777777777,
+                261.39169321910487
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "file": "public-seed-v1-cursor-3.rumsyn",
+      "sha256": "75fed47a96640baa3f668a46965560afc03a167ec3c0ad6d496432f9c8c207e2",
+      "cursor": 3,
+      "historyLength": 7,
+      "before": {
+        "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+        "schemaVersion": 1,
+        "revision": 15,
+        "walls": [
+          {
+            "id": "wall-A",
+            "name": "A",
+            "length": {
+              "value": 410,
+              "unit": "cm",
+              "source": "adjusted"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-B",
+            "name": "B",
+            "length": {
+              "value": 300,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-C",
+            "name": "C",
+            "length": {
+              "value": 350,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-D",
+            "name": "D",
+            "length": {
+              "value": 300,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          }
+        ],
+        "attachments": [
+          {
+            "id": "288d8349-68d2-4874-bc50-ddd45c14c169",
+            "wallId": "wall-A",
+            "width": 90,
+            "height": 200,
+            "offset": 30,
+            "bottom": 0,
+            "anchor": "start"
+          }
+        ],
+        "furniture": [],
+        "room": {
+          "kind": "measured-quadrilateral",
+          "verticesProvenance": "derived",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              311.77777777777777,
+              266.2604313148137
+            ],
+            [
+              450,
+              0
+            ],
+            [
+              188.88888888888889,
+              -233.06863292670036
+            ]
+          ],
+          "diagonal": {
+            "value": 450,
+            "unit": "cm",
+            "source": "entered"
+          },
+          "orientation": "clockwise",
+          "approximate": false
+        }
+      },
+      "afterUndo": {
+        "cursor": 2,
+        "state": {
+          "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+          "schemaVersion": 1,
+          "revision": 16,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 410,
+                "unit": "cm",
+                "source": "adjusted"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [],
+          "furniture": [],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                311.77777777777777,
+                266.2604313148137
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      },
+      "afterRedo": {
+        "cursor": 4,
+        "state": {
+          "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+          "schemaVersion": 1,
+          "revision": 16,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 410,
+                "unit": "cm",
+                "source": "adjusted"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [
+            {
+              "id": "288d8349-68d2-4874-bc50-ddd45c14c169",
+              "wallId": "wall-A",
+              "width": 90,
+              "height": 200,
+              "offset": 30,
+              "bottom": 0,
+              "anchor": "start"
+            },
+            {
+              "id": "e05a0a99-ea4c-4367-89fb-4aae3c481de4",
+              "wallId": "wall-A",
+              "width": 80,
+              "height": 200,
+              "offset": 220,
+              "bottom": 0,
+              "anchor": "start"
+            }
+          ],
+          "furniture": [],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                311.77777777777777,
+                266.2604313148137
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "file": "public-seed-v1-cursor-7.rumsyn",
+      "sha256": "9c6e1f9989a08b6156fab7dbe075e4c2200ee1fd345bae185d0e3501ab120c69",
+      "cursor": 7,
+      "historyLength": 7,
+      "before": {
+        "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+        "schemaVersion": 1,
+        "revision": 11,
+        "walls": [
+          {
+            "id": "wall-A",
+            "name": "A",
+            "length": {
+              "value": 420,
+              "unit": "cm",
+              "source": "adjusted"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-B",
+            "name": "B",
+            "length": {
+              "value": 300,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-C",
+            "name": "C",
+            "length": {
+              "value": 350,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-D",
+            "name": "D",
+            "length": {
+              "value": 300,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          }
+        ],
+        "attachments": [
+          {
+            "id": "288d8349-68d2-4874-bc50-ddd45c14c169",
+            "wallId": "wall-A",
+            "width": 90,
+            "height": 200,
+            "offset": 30,
+            "bottom": 0,
+            "anchor": "start"
+          },
+          {
+            "id": "e05a0a99-ea4c-4367-89fb-4aae3c481de4",
+            "wallId": "wall-A",
+            "width": 80,
+            "height": 200,
+            "offset": 220,
+            "bottom": 0,
+            "anchor": "start"
+          }
+        ],
+        "furniture": [
+          {
+            "id": "ff6caf95-ae6e-4d6e-a607-72036666f198",
+            "category": "table",
+            "width": 100,
+            "depth": 60,
+            "height": 75,
+            "x": 150,
+            "y": 0,
+            "elevation": 0,
+            "rotation": 0
+          },
+          {
+            "id": "a7accb2d-a5a3-4aad-ba49-cc884208590f",
+            "category": "table",
+            "width": 55,
+            "depth": 55,
+            "height": 45,
+            "x": 150,
+            "y": 0,
+            "elevation": 0,
+            "rotation": 0,
+            "product": {
+              "identity": "ikea:IL:30449908:white",
+              "article": "304.499.08",
+              "name": "LACK שולחן צד",
+              "sourceUrl": "https://www.ikea.com/il/he/p/lack-side-table-white-30449908/",
+              "retrieved": "2026-10-08",
+              "dimensions": {
+                "width": 55,
+                "depth": 55,
+                "height": 45,
+                "unit": "cm"
+              },
+              "geometry": "generic-table",
+              "provenance": {
+                "dimensions": "source",
+                "geometry": "generic"
+              },
+              "color": "#ffffff",
+              "price": 65,
+              "currency": "ILS",
+              "catalogVersion": "seed-2026-10-08",
+              "catalogHash": "24634f48116e18341ec9f13d185ec84dc2ea9d3528addbe7b06dfc95b7e0bd56",
+              "plugin": {
+                "id": "ikea-il",
+                "repository": "https://github.com/yaniv-golan/RUMSYN-ikea-israel",
+                "commit": "be681b653b93c1c34c25a9df102043d058a9acd6",
+                "manifestHash": "f530113035b1df4c23355f480943cbaba49bd897c67689fb8ed984ddfad2dbd6"
+              }
+            }
+          }
+        ],
+        "room": {
+          "kind": "measured-quadrilateral",
+          "verticesProvenance": "derived",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              321,
+              270.84866623263997
+            ],
+            [
+              450,
+              0
+            ],
+            [
+              188.88888888888889,
+              -233.06863292670036
+            ]
+          ],
+          "diagonal": {
+            "value": 450,
+            "unit": "cm",
+            "source": "entered"
+          },
+          "orientation": "clockwise",
+          "approximate": false
+        }
+      },
+      "afterUndo": {
+        "cursor": 6,
+        "state": {
+          "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+          "schemaVersion": 1,
+          "revision": 12,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 420,
+                "unit": "cm",
+                "source": "adjusted"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [
+            {
+              "id": "288d8349-68d2-4874-bc50-ddd45c14c169",
+              "wallId": "wall-A",
+              "width": 90,
+              "height": 200,
+              "offset": 30,
+              "bottom": 0,
+              "anchor": "start"
+            },
+            {
+              "id": "e05a0a99-ea4c-4367-89fb-4aae3c481de4",
+              "wallId": "wall-A",
+              "width": 80,
+              "height": 200,
+              "offset": 220,
+              "bottom": 0,
+              "anchor": "start"
+            }
+          ],
+          "furniture": [
+            {
+              "id": "ff6caf95-ae6e-4d6e-a607-72036666f198",
+              "category": "table",
+              "width": 100,
+              "depth": 60,
+              "height": 75,
+              "x": 150,
+              "y": 0,
+              "elevation": 0,
+              "rotation": 0
+            }
+          ],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                321,
+                270.84866623263997
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      },
+      "afterRedo": {
+        "cursor": 7,
+        "state": {
+          "id": "2722be56-fe6e-40ac-80dd-339fc58ed122",
+          "schemaVersion": 1,
+          "revision": 11,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 420,
+                "unit": "cm",
+                "source": "adjusted"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [
+            {
+              "id": "288d8349-68d2-4874-bc50-ddd45c14c169",
+              "wallId": "wall-A",
+              "width": 90,
+              "height": 200,
+              "offset": 30,
+              "bottom": 0,
+              "anchor": "start"
+            },
+            {
+              "id": "e05a0a99-ea4c-4367-89fb-4aae3c481de4",
+              "wallId": "wall-A",
+              "width": 80,
+              "height": 200,
+              "offset": 220,
+              "bottom": 0,
+              "anchor": "start"
+            }
+          ],
+          "furniture": [
+            {
+              "id": "ff6caf95-ae6e-4d6e-a607-72036666f198",
+              "category": "table",
+              "width": 100,
+              "depth": 60,
+              "height": 75,
+              "x": 150,
+              "y": 0,
+              "elevation": 0,
+              "rotation": 0
+            },
+            {
+              "id": "a7accb2d-a5a3-4aad-ba49-cc884208590f",
+              "category": "table",
+              "width": 55,
+              "depth": 55,
+              "height": 45,
+              "x": 150,
+              "y": 0,
+              "elevation": 0,
+              "rotation": 0,
+              "product": {
+                "identity": "ikea:IL:30449908:white",
+                "article": "304.499.08",
+                "name": "LACK שולחן צד",
+                "sourceUrl": "https://www.ikea.com/il/he/p/lack-side-table-white-30449908/",
+                "retrieved": "2026-10-08",
+                "dimensions": {
+                  "width": 55,
+                  "depth": 55,
+                  "height": 45,
+                  "unit": "cm"
+                },
+                "geometry": "generic-table",
+                "provenance": {
+                  "dimensions": "source",
+                  "geometry": "generic"
+                },
+                "color": "#ffffff",
+                "price": 65,
+                "currency": "ILS",
+                "catalogVersion": "seed-2026-10-08",
+                "catalogHash": "24634f48116e18341ec9f13d185ec84dc2ea9d3528addbe7b06dfc95b7e0bd56",
+                "plugin": {
+                  "id": "ikea-il",
+                  "repository": "https://github.com/yaniv-golan/RUMSYN-ikea-israel",
+                  "commit": "be681b653b93c1c34c25a9df102043d058a9acd6",
+                  "manifestHash": "f530113035b1df4c23355f480943cbaba49bd897c67689fb8ed984ddfad2dbd6"
+                }
+              }
+            }
+          ],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                321,
+                270.84866623263997
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "file": "latest-native-v1-cursor-0.rumsyn",
+      "sha256": "a8b572a9e966919d7c2238dc5f02c74d17ba2b896c67d7fa0f5e56ab14fc0471",
+      "cursor": 0,
+      "historyLength": 7,
+      "before": {
+        "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+        "schemaVersion": 1,
+        "revision": 18,
+        "walls": [],
+        "attachments": [],
+        "furniture": [],
+        "room": null
+      },
+      "afterUndo": {
+        "cursor": 0,
+        "state": {
+          "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+          "schemaVersion": 1,
+          "revision": 18,
+          "walls": [],
+          "attachments": [],
+          "furniture": [],
+          "room": null
+        }
+      },
+      "afterRedo": {
+        "cursor": 1,
+        "state": {
+          "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+          "schemaVersion": 1,
+          "revision": 19,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 400,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [],
+          "furniture": [],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                302.77777777777777,
+                261.39169321910487
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "file": "latest-native-v1-cursor-3.rumsyn",
+      "sha256": "9e81782bbc2263446f65628254efba1ace0ccf5b5b38635b9c360431d907e3f8",
+      "cursor": 3,
+      "historyLength": 7,
+      "before": {
+        "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+        "schemaVersion": 1,
+        "revision": 15,
+        "walls": [
+          {
+            "id": "wall-A",
+            "name": "A",
+            "length": {
+              "value": 410,
+              "unit": "cm",
+              "source": "adjusted"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-B",
+            "name": "B",
+            "length": {
+              "value": 300,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-C",
+            "name": "C",
+            "length": {
+              "value": 350,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-D",
+            "name": "D",
+            "length": {
+              "value": 300,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          }
+        ],
+        "attachments": [
+          {
+            "id": "23128fc2-b22a-47bf-bcfe-2ca6ae39df82",
+            "wallId": "wall-A",
+            "width": 90,
+            "height": 200,
+            "offset": 30,
+            "bottom": 0,
+            "anchor": "start"
+          }
+        ],
+        "furniture": [],
+        "room": {
+          "kind": "measured-quadrilateral",
+          "verticesProvenance": "derived",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              311.77777777777777,
+              266.2604313148137
+            ],
+            [
+              450,
+              0
+            ],
+            [
+              188.88888888888889,
+              -233.06863292670036
+            ]
+          ],
+          "diagonal": {
+            "value": 450,
+            "unit": "cm",
+            "source": "entered"
+          },
+          "orientation": "clockwise",
+          "approximate": false
+        }
+      },
+      "afterUndo": {
+        "cursor": 2,
+        "state": {
+          "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+          "schemaVersion": 1,
+          "revision": 16,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 410,
+                "unit": "cm",
+                "source": "adjusted"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [],
+          "furniture": [],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                311.77777777777777,
+                266.2604313148137
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      },
+      "afterRedo": {
+        "cursor": 4,
+        "state": {
+          "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+          "schemaVersion": 1,
+          "revision": 16,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 410,
+                "unit": "cm",
+                "source": "adjusted"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [
+            {
+              "id": "23128fc2-b22a-47bf-bcfe-2ca6ae39df82",
+              "wallId": "wall-A",
+              "width": 90,
+              "height": 200,
+              "offset": 30,
+              "bottom": 0,
+              "anchor": "start"
+            },
+            {
+              "id": "bddf9a9d-c902-4c10-a462-e71424414cbf",
+              "wallId": "wall-A",
+              "width": 80,
+              "height": 200,
+              "offset": 220,
+              "bottom": 0,
+              "anchor": "start"
+            }
+          ],
+          "furniture": [],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                311.77777777777777,
+                266.2604313148137
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      }
+    },
+    {
+      "file": "latest-native-v1-cursor-7.rumsyn",
+      "sha256": "ce888aa0732a651023fef8b052bd1f38b8462c0117df5ef3cd3122c4a39cff6e",
+      "cursor": 7,
+      "historyLength": 7,
+      "before": {
+        "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+        "schemaVersion": 1,
+        "revision": 11,
+        "walls": [
+          {
+            "id": "wall-A",
+            "name": "A",
+            "length": {
+              "value": 420,
+              "unit": "cm",
+              "source": "adjusted"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-B",
+            "name": "B",
+            "length": {
+              "value": 300,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-C",
+            "name": "C",
+            "length": {
+              "value": 350,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          },
+          {
+            "id": "wall-D",
+            "name": "D",
+            "length": {
+              "value": 300,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "height": 240,
+            "thickness": 15,
+            "materialFaces": {
+              "inside": {
+                "color": "#ebe7dc"
+              },
+              "outside": {
+                "color": "#b9b5ac"
+              }
+            }
+          }
+        ],
+        "attachments": [
+          {
+            "id": "23128fc2-b22a-47bf-bcfe-2ca6ae39df82",
+            "wallId": "wall-A",
+            "width": 90,
+            "height": 200,
+            "offset": 30,
+            "bottom": 0,
+            "anchor": "start"
+          },
+          {
+            "id": "bddf9a9d-c902-4c10-a462-e71424414cbf",
+            "wallId": "wall-A",
+            "width": 80,
+            "height": 200,
+            "offset": 220,
+            "bottom": 0,
+            "anchor": "start"
+          }
+        ],
+        "furniture": [
+          {
+            "id": "b02fc2d9-50e5-48a2-8697-d8fc8221d005",
+            "category": "table",
+            "width": 100,
+            "depth": 60,
+            "height": 75,
+            "x": 150,
+            "y": 0,
+            "elevation": 0,
+            "rotation": 0
+          },
+          {
+            "id": "d7bb89f5-91c3-4610-88c7-749cffd05399",
+            "category": "table",
+            "width": 55,
+            "depth": 55,
+            "height": 45,
+            "x": 150,
+            "y": 0,
+            "elevation": 0,
+            "rotation": 0,
+            "product": {
+              "identity": "ikea:IL:30449908:white",
+              "article": "304.499.08",
+              "name": "LACK שולחן צד",
+              "sourceUrl": "https://www.ikea.com/il/he/p/lack-side-table-white-30449908/",
+              "retrieved": "2026-10-08",
+              "dimensions": {
+                "width": 55,
+                "depth": 55,
+                "height": 45,
+                "unit": "cm"
+              },
+              "geometry": "generic-table",
+              "provenance": {
+                "dimensions": "source",
+                "geometry": "generic"
+              },
+              "color": "#ffffff",
+              "price": 65,
+              "currency": "ILS",
+              "catalogVersion": "seed-2026-10-08",
+              "catalogHash": "24634f48116e18341ec9f13d185ec84dc2ea9d3528addbe7b06dfc95b7e0bd56",
+              "plugin": {
+                "id": "ikea-il",
+                "repository": "https://github.com/yaniv-golan/RUMSYN-ikea-israel",
+                "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "manifestHash": "6521575192fbd7ac099309e3abcc16b4113b8d87642f2aedf8060956bc454926"
+              }
+            }
+          }
+        ],
+        "room": {
+          "kind": "measured-quadrilateral",
+          "verticesProvenance": "derived",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              321,
+              270.84866623263997
+            ],
+            [
+              450,
+              0
+            ],
+            [
+              188.88888888888889,
+              -233.06863292670036
+            ]
+          ],
+          "diagonal": {
+            "value": 450,
+            "unit": "cm",
+            "source": "entered"
+          },
+          "orientation": "clockwise",
+          "approximate": false
+        }
+      },
+      "afterUndo": {
+        "cursor": 6,
+        "state": {
+          "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+          "schemaVersion": 1,
+          "revision": 12,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 420,
+                "unit": "cm",
+                "source": "adjusted"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [
+            {
+              "id": "23128fc2-b22a-47bf-bcfe-2ca6ae39df82",
+              "wallId": "wall-A",
+              "width": 90,
+              "height": 200,
+              "offset": 30,
+              "bottom": 0,
+              "anchor": "start"
+            },
+            {
+              "id": "bddf9a9d-c902-4c10-a462-e71424414cbf",
+              "wallId": "wall-A",
+              "width": 80,
+              "height": 200,
+              "offset": 220,
+              "bottom": 0,
+              "anchor": "start"
+            }
+          ],
+          "furniture": [
+            {
+              "id": "b02fc2d9-50e5-48a2-8697-d8fc8221d005",
+              "category": "table",
+              "width": 100,
+              "depth": 60,
+              "height": 75,
+              "x": 150,
+              "y": 0,
+              "elevation": 0,
+              "rotation": 0
+            }
+          ],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                321,
+                270.84866623263997
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      },
+      "afterRedo": {
+        "cursor": 7,
+        "state": {
+          "id": "dfe0ca0b-1075-4e5d-94df-2e76756e5e0f",
+          "schemaVersion": 1,
+          "revision": 11,
+          "walls": [
+            {
+              "id": "wall-A",
+              "name": "A",
+              "length": {
+                "value": 420,
+                "unit": "cm",
+                "source": "adjusted"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-B",
+              "name": "B",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-C",
+              "name": "C",
+              "length": {
+                "value": 350,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            },
+            {
+              "id": "wall-D",
+              "name": "D",
+              "length": {
+                "value": 300,
+                "unit": "cm",
+                "source": "entered"
+              },
+              "height": 240,
+              "thickness": 15,
+              "materialFaces": {
+                "inside": {
+                  "color": "#ebe7dc"
+                },
+                "outside": {
+                  "color": "#b9b5ac"
+                }
+              }
+            }
+          ],
+          "attachments": [
+            {
+              "id": "23128fc2-b22a-47bf-bcfe-2ca6ae39df82",
+              "wallId": "wall-A",
+              "width": 90,
+              "height": 200,
+              "offset": 30,
+              "bottom": 0,
+              "anchor": "start"
+            },
+            {
+              "id": "bddf9a9d-c902-4c10-a462-e71424414cbf",
+              "wallId": "wall-A",
+              "width": 80,
+              "height": 200,
+              "offset": 220,
+              "bottom": 0,
+              "anchor": "start"
+            }
+          ],
+          "furniture": [
+            {
+              "id": "b02fc2d9-50e5-48a2-8697-d8fc8221d005",
+              "category": "table",
+              "width": 100,
+              "depth": 60,
+              "height": 75,
+              "x": 150,
+              "y": 0,
+              "elevation": 0,
+              "rotation": 0
+            },
+            {
+              "id": "d7bb89f5-91c3-4610-88c7-749cffd05399",
+              "category": "table",
+              "width": 55,
+              "depth": 55,
+              "height": 45,
+              "x": 150,
+              "y": 0,
+              "elevation": 0,
+              "rotation": 0,
+              "product": {
+                "identity": "ikea:IL:30449908:white",
+                "article": "304.499.08",
+                "name": "LACK שולחן צד",
+                "sourceUrl": "https://www.ikea.com/il/he/p/lack-side-table-white-30449908/",
+                "retrieved": "2026-10-08",
+                "dimensions": {
+                  "width": 55,
+                  "depth": 55,
+                  "height": 45,
+                  "unit": "cm"
+                },
+                "geometry": "generic-table",
+                "provenance": {
+                  "dimensions": "source",
+                  "geometry": "generic"
+                },
+                "color": "#ffffff",
+                "price": 65,
+                "currency": "ILS",
+                "catalogVersion": "seed-2026-10-08",
+                "catalogHash": "24634f48116e18341ec9f13d185ec84dc2ea9d3528addbe7b06dfc95b7e0bd56",
+                "plugin": {
+                  "id": "ikea-il",
+                  "repository": "https://github.com/yaniv-golan/RUMSYN-ikea-israel",
+                  "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "manifestHash": "6521575192fbd7ac099309e3abcc16b4113b8d87642f2aedf8060956bc454926"
+                }
+              }
+            }
+          ],
+          "room": {
+            "kind": "measured-quadrilateral",
+            "verticesProvenance": "derived",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                321,
+                270.84866623263997
+              ],
+              [
+                450,
+                0
+              ],
+              [
+                188.88888888888889,
+                -233.06863292670036
+              ]
+            ],
+            "diagonal": {
+              "value": 450,
+              "unit": "cm",
+              "source": "entered"
+            },
+            "orientation": "clockwise",
+            "approximate": false
+          }
+        }
+      }
+    }
+  ]
+}

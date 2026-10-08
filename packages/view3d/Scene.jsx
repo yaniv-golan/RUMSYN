@@ -1,7 +1,7 @@
 import React,{useEffect,useRef} from 'react';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-import {attachmentStart,wallEndpoints} from '../model/room.js';
+import {roomPoints,attachmentStart,wallEndpoints} from '../model/room.js';
 import {wallParts} from '../geometry/wall-parts.js';
 import {furnitureParts,partCentre} from '../geometry/furniture-parts.js';
 const cm=v=>v*.01;
@@ -24,7 +24,7 @@ export function Scene({state,selected,onSelect,label,cameraMemory,cutaway=true,f
  useEffect(()=>{
   const ctx=context.current;if(!ctx||!state.room)return;const {group,camera,controls}=ctx;dispose(group);ctx.pickables=[];
   const mesh=(geometry,color,id,transparent=false)=>{const o=new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({color,roughness:.8,side:THREE.DoubleSide,transparent,opacity:transparent ? 0.25 : 1,depthWrite:!transparent}));o.userData={id,baseColor:color,baseOpacity:transparent?.25:1};o.castShadow=!transparent;o.receiveShadow=true;group.add(o);if(id)ctx.pickables.push(o);return o;};
-  const shape=new THREE.Shape(state.room.vertices.map(([x,y])=>new THREE.Vector2(cm(x),cm(y))));const floor=mesh(new THREE.ShapeGeometry(shape),'#ddd0b6');floor.rotation.x=-Math.PI/2;
+  const shape=new THREE.Shape(roomPoints(state).map(([x,y])=>new THREE.Vector2(cm(x),cm(y))));const floor=mesh(new THREE.ShapeGeometry(shape),'#ddd0b6');floor.rotation.x=-Math.PI/2;
   for(const wall of state.walls){const [a,b]=wallEndpoints(state,wall.id),angle=Math.atan2(b[1]-a[1],b[0]-a[0]),openings=state.attachments.filter(o=>o.wallId===wall.id);
    const part=(start,length,bottom,height,id,color,transparent=false)=>{if(length<=0||height<=0)return;const o=mesh(new THREE.BoxGeometry(cm(length),cm(height),cm(wall.thickness)),color,id,transparent),centre=start+length/2,normal=state.room.orientation==='clockwise'?1:-1;o.position.set(cm(a[0]+Math.cos(angle)*centre-normal*Math.sin(angle)*wall.thickness/2),cm(bottom+height/2),-cm(a[1]+Math.sin(angle)*centre+normal*Math.cos(angle)*wall.thickness/2));o.rotation.y=angle;o.userData.wallView={centre:[cm((a[0]+b[0])/2),-cm((a[1]+b[1])/2)],normal:[-normal*Math.sin(angle),-normal*Math.cos(angle)]};if(!transparent){const edges=new THREE.LineSegments(new THREE.EdgesGeometry(o.geometry),new THREE.LineBasicMaterial({color:'#66717d'}));edges.position.copy(o.position);edges.rotation.copy(o.rotation);edges.userData={id,baseColor:'#66717d'};group.add(edges);ctx.pickables.push(edges);}};
    for(const p of wallParts(wall,openings))part(p.start,p.length,p.bottom,p.height,wall.id,wall.materialFaces.inside.color);

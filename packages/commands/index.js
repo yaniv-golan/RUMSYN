@@ -1,6 +1,6 @@
 import {placementWarnings} from '../geometry/placement.js';
 import {PROJECT_LIMITS,jsonBytes} from '../model/limits.js';
-import {measuredRoom} from '../model/room.js';
+import {polygonRoom,measuredRoom} from '../model/room.js';
 import {solveQuadrilateral} from '../model/solver.js';
 import {clone, validateState, measurement} from '../model/index.js';
 function canonical(value){if(Array.isArray(value))return value.map(canonical);if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(k=>[k,canonical(value[k])]));return value;}
@@ -22,7 +22,8 @@ export class CommandSession {
     if (wall.locked) throw new Error('Wall measurement is locked');
     const after = clone(this.state);
     after.walls.find(w=>w.id===wallId).length = measurement(value, 'adjusted');
-    if(after.room){const result=solveQuadrilateral({sides:after.walls.map(w=>w.length.value),diagonal:after.room.diagonal.value,orientation:after.room.orientation});if(result.status!=='solved')throw new Error(result.reason);after.room.vertices=result.coordinates;}
+    if(after.room?.kind==='polygon')throw new Error('Polygon length constraints require a corner/constraint preview; existing geometry is unchanged');
+    if(after.room){const result=solveQuadrilateral({sides:after.walls.map(w=>w.length.value),diagonal:after.room.diagonal.value,orientation:after.room.orientation});if(result.status!=='solved')throw new Error(result.reason);if(after.schemaVersion===2)after.room.corners=after.room.corners.map((c,i)=>({...c,x:result.coordinates[i][0],y:result.coordinates[i][1]}));else after.room.vertices=result.coordinates;}
     after.revision++;
     validateState(after); // A conflicting opening is an error, never resized/deleted.
     const proposal = {id:`proposal-${++this.nextId}`, baseRevision:this.state.revision, changes:[{wallId,oldValue:wall.length.value,newValue:value,reason:'Explicit accepted dimension edit'}], affected:this.state.attachments.filter(a=>a.wallId===wallId).map(a=>a.id), after};
@@ -35,6 +36,7 @@ export class CommandSession {
     this.proposals.set(proposal.id,clone(proposal));return clone(proposal);
   }
   previewRoom(input){return this.previewMutation('Create measured room',after=>{if(after.room)throw new Error('Use dimension edits for an existing room');Object.assign(after,measuredRoom(input));});}
+  previewOutline(input){return this.previewMutation('Create polygon perimeter',after=>{if(after.room)throw new Error('Create a new project for this entry method');Object.assign(after,polygonRoom(input));});}
   previewOpening(item){return this.previewMutation('Add opening',after=>{if(!after.room)throw new Error('Create a room first');after.attachments.push(clone(item));});}
   previewFurniture(item){const proposal=this.previewMutation('Place furniture',after=>{if(!after.room)throw new Error('Create a room first');(after.furniture??=[]).push(clone(item));});proposal.warnings=placementWarnings(this.state,item);this.proposals.set(proposal.id,clone(proposal));return clone(proposal);}
   previewFurnitureEdit(id,patch){return this.previewMutation('Edit furniture',after=>{const f=after.furniture?.find(f=>f.id===id);if(!f)throw new Error('Unknown furniture');for(const key of Object.keys(patch))if(!['x','y','elevation','rotation','width','depth','height'].includes(key))throw new Error('Unsupported furniture property');if(f.product&&['width','depth','height'].some(k=>k in patch&&patch[k]!==f.product.dimensions[k]))throw new Error('Catalog product dimensions are fixed. Use a generic placeholder for custom sizes.');Object.assign(f,clone(patch));});}

@@ -1,5 +1,5 @@
 import {test,expect} from 'vitest';
-import {emptyProject,measuredRoom} from '../../packages/model/room.js';
+import {roomPoints,emptyProject,measuredRoom} from '../../packages/model/room.js';
 import {CommandSession} from '../../packages/commands/index.js';
 import {exportProject,importProject} from '../../packages/persistence/index.js';
 import {en,he} from '../../packages/localization/index.js';
@@ -8,7 +8,7 @@ function session(){const s=new CommandSession(emptyProject('synthetic'));s.apply
 test('M1 R005 R012: dimension changes keep polygon, attached opening and undo consistent',()=>{
  const s=session();s.apply(s.previewOpening({id:'opening',wallId:'wall-A',width:91,height:200,bottom:0,offset:66,anchor:'start'}).id);const before=structuredClone(s.state);
  const preview=s.previewWallLength('wall-A',410);expect(s.state).toEqual(before);s.apply(preview.id);
- const [a,b]=s.state.room.vertices;expect(Math.hypot(b[0]-a[0],b[1]-a[1])).toBeCloseTo(410,6);expect(s.state.attachments).toEqual(before.attachments);
+ const [a,b]=roomPoints(s.state);expect(Math.hypot(b[0]-a[0],b[1]-a[1])).toBeCloseTo(410,6);expect(s.state.attachments).toEqual(before.attachments);
  s.undo();expect(s.state.walls).toEqual(before.walls);expect(s.state.room).toEqual(before.room);expect(s.state.attachments).toEqual(before.attachments);
 });
 test('M1 R030 R031 R032: portable archive in a fresh session retains executable undo and product snapshot',()=>{

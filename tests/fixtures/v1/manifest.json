@@ -1,0 +1,18 @@
+[
+  {
+    "file": "public-seed-v1.rumsyn",
+    "origin": "/Users/yaniv/.codex/worktrees/m1-consumer/RUMSYN/artifacts/workflow-public/attempt-1791487275582/room.rumsyn",
+    "sha256": "901942b85dbb28820e4889277342ab89fadac9dfd3d4fbd2e31a19a5ea074c7c",
+    "format": 1,
+    "historyLength": 7,
+    "cursor": 7
+  },
+  {
+    "file": "latest-native-v1.rumsyn",
+    "origin": "/Users/yaniv/.codex/worktrees/m1-consumer/RUMSYN/artifacts/workflow/room.rumsyn",
+    "sha256": "245c594df90fabdee5a77a080b5f32230aa47db16d74d9b28cd8ff9b73e59289",
+    "format": 1,
+    "historyLength": 7,
+    "cursor": 7
+  }
+]

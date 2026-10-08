@@ -1,5 +1,5 @@
 import {validateRoom} from './room.js';
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 export const TOLERANCE_CM = 1e-6;
 export function clone(value) { return structuredClone(value); }
 export function dimension(value, field = 'dimension') {
@@ -17,7 +17,7 @@ export function parseLength(input) {
   return dimension(Number(match[1]) * {cm:1, mm:0.1, m:100, in:2.54, ft:30.48}[match[2]]);
 }
 export function validateState(state) {
-  if (state.schemaVersion !== SCHEMA_VERSION || !Number.isSafeInteger(state.revision) || state.revision < 0) throw new Error('Invalid model version/revision');
+  if (![1,SCHEMA_VERSION].includes(state.schemaVersion) || !Number.isSafeInteger(state.revision) || state.revision < 0) throw new Error('Invalid model version/revision');
   if (!Array.isArray(state.walls) || !Array.isArray(state.attachments)) throw new Error('Missing walls/attachments');
   const ids = new Set();
   for (const wall of state.walls) {
