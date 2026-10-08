@@ -1,0 +1,11 @@
+import {saveRecoveryProof,reopenRecoveryProof} from './recovery-proof.js';
+import {solveQuadrilateral,reconcileSegments} from '../../packages/model/solver.js';
+import {geometryModule,cutWall} from '../../packages/geometry/proof.js';
+import wasmUrl from 'manifold-3d/manifold.wasm?url';
+import {generatePdfProof} from '../../packages/exports/pdf-proof.js';
+const output=document.querySelector('#result');
+const run=fn=>async()=>{try{output.textContent=JSON.stringify(await fn(),null,2);}catch(error){output.textContent=`FAILED: ${error.message}`;}};
+window.rumsynProof={generatePdfProof,saveRecoveryProof,reopenRecoveryProof};
+document.querySelector('#solver').onclick=run(()=>({insufficient:solveQuadrilateral({sides:[206,306,217,306]}),synthetic:solveQuadrilateral({sides:[3,4,3,4],diagonal:5,orientation:'clockwise'}),discrepancy:reconcileSegments({wallId:'D',total:{value:306},segments:[{id:'D1',value:105},{id:'window',value:91},{id:'D3',value:111}]})}));
+document.querySelector('#geometry').onclick=run(async()=>{const start=performance.now();const m=await geometryModule({locateFile:()=>wasmUrl}),coldMs=performance.now()-start;const t=performance.now();for(let i=0;i<100;i++)cutWall(m,{length:300,height:237,thickness:15,openings:[{offset:1,bottom:47,width:91,height:162}]});return {coldMs,repeated100Ms:performance.now()-t,device:navigator.userAgent,tablet:'not_run',memoryGrowth:'not_run',cancellation:'not_run'};});
+document.querySelector('#pdf').onclick=run(async()=>{const result=[];for(const format of ['a4','a3']){const proof=await generatePdfProof({format});const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([proof.bytes],{type:'application/pdf'}));a.download=`m0-${format}.pdf`;a.textContent=`Download ${format.toUpperCase()} synthetic proof`;document.querySelector('#files').append(a,document.createElement('br'));result.push(proof.meta);}return result;});

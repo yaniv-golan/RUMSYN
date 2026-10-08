@@ -1,3 +1,4 @@
+import {validateRoom} from './room.js';
 export const SCHEMA_VERSION = 1;
 export const TOLERANCE_CM = 1e-6;
 export function clone(value) { return structuredClone(value); }
@@ -31,7 +32,8 @@ export function validateState(state) {
     const wall = state.walls.find(w => w.id === item.wallId);
     if (!wall || !Number.isFinite(item.offset) || item.offset < 0 || !['start','end'].includes(item.anchor)) throw new Error('Invalid attachment host/anchor');
     dimension(item.width);
+    if(item.height!==undefined){dimension(item.height);if(!Number.isFinite(item.bottom)||item.bottom<0||item.bottom+item.height>wall.height+TOLERANCE_CM)throw new Error('Opening height/elevation no longer fits its wall');}
     if (item.offset + item.width > wall.length.value + TOLERANCE_CM) throw new Error('Opening no longer fits its wall');
   }
-  return state;
+  return validateRoom(state);
 }

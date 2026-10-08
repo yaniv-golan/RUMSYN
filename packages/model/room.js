@@ -1,0 +1,29 @@
+import {measurement,dimension,TOLERANCE_CM} from './index.js';
+import {solveQuadrilateral} from './solver.js';
+export function emptyProject(id){return {id,schemaVersion:1,revision:0,walls:[],attachments:[],furniture:[],room:null};}
+export function measuredRoom({sides,diagonal,orientation,height=240,thickness=15}){
+ dimension(height);dimension(thickness);
+ const solved=solveQuadrilateral({sides,diagonal,orientation});
+ if(solved.status!=='solved')throw new Error(solved.reason??solved.status);
+ return {walls:sides.map((v,i)=>({id:'wall-'+String.fromCharCode(65+i),name:String.fromCharCode(65+i),length:measurement(v),height,thickness,materialFaces:{inside:{color:'#ebe7dc'},outside:{color:'#b9b5ac'}}})),room:{kind:'measured-quadrilateral',verticesProvenance:'derived',vertices:solved.coordinates,diagonal:measurement(diagonal),orientation,approximate:false}};
+}
+export function validateRoom(state){
+ if(state.room){
+   if(state.room.kind!=='measured-quadrilateral'||state.room.verticesProvenance!=='derived')throw new Error('Unsupported room geometry/provenance');
+   const diagonal=state.room.diagonal;dimension(diagonal?.value,'room diagonal');
+   if(diagonal.unit!=='cm'||!['entered','derived','inferred','adjusted'].includes(diagonal.source))throw new Error('Invalid diagonal provenance/units');
+   if(!['clockwise','counterclockwise'].includes(state.room.orientation))throw new Error('Unknown room orientation');
+   const points=state.room.vertices;if(!Array.isArray(points)||points.length!==4||state.walls.length!==4)throw new Error('Expected four room corners/walls');points.forEach(p=>{if(!Array.isArray(p)||p.length!==2||!p.every(Number.isFinite))throw new Error('Invalid room coordinate');});state.walls.forEach((wall,i)=>{const a=points[i],b=points[(i+1)%4];if(Math.abs(Math.hypot(b[0]-a[0],b[1]-a[1])-wall.length.value)>TOLERANCE_CM)throw new Error('Room perimeter disagrees with measured wall');dimension(wall.height);dimension(wall.thickness);for(const side of ['inside','outside'])if(!/^#(?:[a-f0-9]{3}|[a-f0-9]{6})$/i.test(wall.materialFaces?.[side]?.color??''))throw new Error('Missing or invalid wall material record');});
+   if(Math.abs(Math.hypot(points[2][0]-points[0][0],points[2][1]-points[0][1])-diagonal.value)>TOLERANCE_CM)throw new Error('Room diagonal disagrees with measured constraint');
+   const turns=points.map((a,i)=>{const b=points[(i+1)%4],c=points[(i+2)%4];return (b[0]-a[0])*(c[1]-b[1])-(b[1]-a[1])*(c[0]-b[0]);});
+   const sign=state.room.orientation==='clockwise'?-1:1;
+   if(!turns.every(t=>sign*t>0))throw new Error('Room topology/orientation disagrees with measured constraint');
+ }
+ if(state.room)for(const o of state.attachments)if(!Number.isFinite(o.height)||!Number.isFinite(o.bottom))throw new Error('Incomplete opening geometry');
+ const ids=new Set([...state.walls,...state.attachments].map(o=>o.id));
+ for(const f of state.furniture??[]){if(!f.id||ids.has(f.id))throw new Error('Invalid furniture ID');ids.add(f.id);for(const key of ['width','depth','height'])dimension(f[key]);if(![f.x,f.y,f.elevation,f.rotation].every(Number.isFinite))throw new Error('Invalid furniture placement');if(f.product){const d=f.product.dimensions;if(!d||d.unit!=='cm'||['width','depth','height'].some(k=>f[k]!==d[k]))throw new Error('Catalog product dimensions disagree with the saved source snapshot');}
+    if(!['table','chair','cabinet'].includes(f.category))throw new Error('Unsupported placeholder category');}
+ return state;
+}
+export function wallEndpoints(state,id){const i=state.walls.findIndex(w=>w.id===id);if(i<0||!state.room)throw new Error('Unknown wall');return [state.room.vertices[i],state.room.vertices[(i+1)%4]];}
+export function attachmentStart(wall,item){return item.anchor==='end'?wall.length.value-item.offset-item.width:item.offset;}

@@ -11,7 +11,7 @@ const browser=await chromium.launch();
 try {
  const page=await browser.newPage();const failures=[];
  page.on('pageerror',e=>failures.push(e.message));
- await page.goto(process.env.RUMSYN_PREVIEW_URL ?? 'http://127.0.0.1:4173/');
+ await page.goto(process.env.RUMSYN_PREVIEW_URL ?? 'http://127.0.0.1:4174/proof.html');
  writeFileSync(`${dir}/initial-snapshot.txt`,await page.locator('body').ariaSnapshot());
  await page.getByRole('button',{name:'Run measurement proof'}).click();
  await page.waitForFunction(()=>document.querySelector('#result').textContent.includes('underdetermined'));

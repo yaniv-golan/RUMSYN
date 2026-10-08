@@ -9,16 +9,17 @@
   },
   "scripts": {
     "doctor": "node scripts/doctor.mjs",
-    "dev": "vite apps/web --host 127.0.0.1",
-    "build": "vite build apps/web --outDir ../../dist --emptyOutDir",
-    "preview": "vite preview apps/web --outDir ../../dist --host 127.0.0.1",
+    "dev": "vite apps/web --config vite.config.js --host 127.0.0.1",
+    "build": "vite build apps/web --config vite.config.js --outDir ../../dist --emptyOutDir",
+    "preview": "vite preview apps/web --config vite.config.js --outDir ../../dist --host 127.0.0.1",
     "check": "node scripts/check.mjs",
     "req:check": "node scripts/requirements.mjs",
     "req:report": "node scripts/requirements.mjs --report",
     "release:check": "node scripts/requirements.mjs --release",
     "test:unit": "node scripts/unit-evidence.mjs",
     "fixture:check": "node scripts/fixture-check.mjs",
-    "proof:browser": "node scripts/browser-proofs.mjs"
+    "proof:browser": "node scripts/browser-proofs.mjs",
+    "test:workflow": "node scripts/workflow-browser.mjs"
   },
   "devDependencies": {
     "vite": "8.3.4",
@@ -28,6 +29,14 @@
   "dependencies": {
     "manifold-3d": "3.5.4",
     "polygon-clipping": "0.15.7",
-    "jspdf": "4.2.1"
+    "jspdf": "4.2.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-aria-components": "1.22.0",
+    "three": "0.186.1",
+    "ajv": "8.20.0",
+    "dexie": "4.4.6",
+    "fflate": "0.8.3",
+    "i18next": "26.4.2"
   }
 }
