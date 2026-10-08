@@ -1,0 +1,2 @@
+import {existsSync,readFileSync} from 'node:fs';
+export function assertBuiltCandidate(candidate){if(!candidate.buildFiles.length)throw new Error('Build artifact absent; run pnpm build');if(!existsSync('artifacts/build-subject.json'))throw new Error('Successful source-bound build stamp absent; run pnpm build');const built=JSON.parse(readFileSync('artifacts/build-subject.json'));if(built.sourceDigest!==candidate.sourceDigest||built.buildDigest!==candidate.buildDigest)throw new Error('Build does not match current source/artifact; run pnpm build');}

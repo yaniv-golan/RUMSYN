@@ -10,7 +10,7 @@
   "scripts": {
     "doctor": "node scripts/doctor.mjs",
     "dev": "vite apps/web --config vite.config.js --host 127.0.0.1",
-    "build": "vite build apps/web --config vite.config.js --outDir ../../dist --emptyOutDir",
+    "build": "node scripts/build.mjs",
     "preview": "vite preview apps/web --config vite.config.js --outDir ../../dist --host 127.0.0.1",
     "check": "node scripts/check.mjs",
     "req:check": "node scripts/requirements.mjs",
@@ -19,7 +19,8 @@
     "test:unit": "node scripts/unit-evidence.mjs",
     "fixture:check": "node scripts/fixture-check.mjs",
     "proof:browser": "node scripts/browser-proofs.mjs",
-    "test:workflow": "node scripts/workflow-browser.mjs"
+    "test:workflow": "node scripts/workflow-browser.mjs",
+    "test:entry": "node scripts/entry-browser.mjs"
   },
   "devDependencies": {
     "vite": "8.3.4",

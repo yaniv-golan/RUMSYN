@@ -1,3 +1,4 @@
+import {assertBuiltCandidate} from './build-subject.mjs';
 import {serveCandidate} from './static-preview.mjs';
 import {chromium} from 'playwright';
 import {mkdirSync,writeFileSync,readFileSync,readdirSync,renameSync} from 'node:fs';
@@ -7,7 +8,7 @@ import {candidateIdentity} from './identity.mjs';
 import {digest} from './gate.mjs';
 const remotePlugin=process.env.RUMSYN_REMOTE_PLUGIN==='1';const dir=remotePlugin?'artifacts/workflow-public':'artifacts/workflow';mkdirSync(dir,{recursive:true});const attempt=`${dir}/attempt-${Date.now()}`;mkdirSync(attempt,{recursive:true});for(const e of readdirSync(dir,{withFileTypes:true}))if(e.isFile())renameSync(`${dir}/${e.name}`,`${attempt}/${e.name}`);
 let produced=false;writeFileSync(`${dir}/status.json`,JSON.stringify({outcome:'running'}));process.on('exit',code=>writeFileSync(`${dir}/status.json`,JSON.stringify({outcome:code===0&&produced?'pass':'fail'})));
-const candidate=candidateIdentity();if(!candidate.buildFiles.length)throw new Error('Build artifact absent');
+const candidate=candidateIdentity();assertBuiltCandidate(candidate);if(!candidate.buildFiles.length)throw new Error('Build artifact absent');
 const preview=await serveCandidate(candidate);const url=preview.url;const browser=await chromium.launch({args:['--use-angle=swiftshader']});
 const failures=[],steps=[],remoteResources=[],remoteReads=[];const step=(id,details={})=>{steps.push({id,outcome:'pass',...details});writeFileSync(`${dir}/progress.json`,JSON.stringify({candidate,steps},null,2));};
 try{

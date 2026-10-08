@@ -1,3 +1,5 @@
+import {serveCandidate} from './static-preview.mjs';
+import {assertBuiltCandidate} from './build-subject.mjs';
 import {chromium} from 'playwright';
 import {mkdirSync,writeFileSync,readdirSync,renameSync} from 'node:fs';
 import {candidateIdentity} from './identity.mjs';
@@ -6,12 +8,12 @@ const attempt=`${dir}/attempt-${Date.now()}`;mkdirSync(attempt,{recursive:true})
 for(const entry of readdirSync(dir,{withFileTypes:true}))if(entry.isFile()&&!entry.name.endsWith('.log'))renameSync(`${dir}/${entry.name}`,`${attempt}/${entry.name}`);
 let produced=false;writeFileSync(`${dir}/run-status.json`,JSON.stringify({outcome:'running',started:new Date().toISOString()}));
 process.on('exit',code=>writeFileSync(`${dir}/run-status.json`,JSON.stringify({outcome:code===0&&produced?'pass':'fail',finished:new Date().toISOString()})));
-const candidate=candidateIdentity();if(!candidate.buildFiles.length)throw new Error('Build artifact absent');
-const browser=await chromium.launch();
+const candidate=candidateIdentity();assertBuiltCandidate(candidate);if(!candidate.buildFiles.length)throw new Error('Build artifact absent');
+const preview=await serveCandidate(candidate);const browser=await chromium.launch();
 try {
  const page=await browser.newPage();const failures=[];
  page.on('pageerror',e=>failures.push(e.message));
- await page.goto(process.env.RUMSYN_PREVIEW_URL ?? 'http://127.0.0.1:4174/proof.html');
+ await page.goto(new URL('proof.html',preview.url).href);
  writeFileSync(`${dir}/initial-snapshot.txt`,await page.locator('body').ariaSnapshot());
  await page.getByRole('button',{name:'Run measurement proof'}).click();
  await page.waitForFunction(()=>document.querySelector('#result').textContent.includes('underdetermined'));
@@ -36,4 +38,4 @@ try {
  writeFileSync(`${dir}/report.json`,JSON.stringify(report,null,2));
  if(failures.length)throw new Error(failures.join('\n'));
  produced=true;console.log(JSON.stringify({browser:report.browser,candidate:report.candidate.sourceDigest,build:report.candidate.buildDigest,recovery:report.recovery,pdf:report.pdf,failures},null,2));
-}finally{await browser.close();}
+}finally{await browser.close();await preview.close();}
