@@ -48,7 +48,7 @@ These defaults are replaceable when the early proof supplies contrary evidence. 
 
 ### 3.1 A single editable room model
 
-Separate geometry, user measurements, constraints, materials, and view state. Stable IDs identify corners, wall edges, faces, openings, trim, beams, fixtures, furniture, and layouts. Store uncertainty/provenance on measured and inferred values. Use meters internally with full numeric precision, documented tolerances, and formatting only at the input/output boundary. Keep original measurement text/value/unit separately; never round the model when switching units.
+Separate geometry, user measurements, constraints, materials, and view state. Stable IDs identify corners, wall edges, faces, openings, trim, beams, fixtures, furniture, and layouts. Store uncertainty/provenance on measured and inferred values. Use canonical centimeters with full numeric precision and documented tolerances, as accepted in ADR0001. Convert explicitly through tested adapters at Three.js/glTF meter-based boundaries; format only at input/output boundaries. Keep original measurement text/value/unit separately; never round the model when switching units.
 
 Represent walls as oriented line/arc segments with thickness and height profile. Model steps, columns, niches, sloped ceilings, and beams with bounded parameterized primitives, not arbitrary CAD solids. Host openings in wall-local coordinates, with separate rough opening, frame, clear passage, pane/leaf, sill, and trim geometry. Generate render meshes and collision proxies from the same parameters. Define and test axis, winding, origin, and elevation conventions before importing assets.
 

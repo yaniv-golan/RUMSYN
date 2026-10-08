@@ -6,7 +6,8 @@ import {wallParts} from '../geometry/wall-parts.js';
 import {furnitureParts,partCentre} from '../geometry/furniture-parts.js';
 const cm=v=>v*.01;
 function dispose(group){group.traverse(o=>{o.geometry?.dispose();if(Array.isArray(o.material))o.material.forEach(m=>m.dispose());else o.material?.dispose();});group.clear();}
-export function Scene({state,selected,onSelect,label,cameraMemory,cutaway=true,fitRequest=0}){
+export function Scene({state,selected,onSelect,label,cameraMemory,cutaway=true,fitRequest=0,zoomRequest=0}){
+ const lastZoom=useRef(zoomRequest),lastFit=useRef(fitRequest);
  const cutawayRef=useRef(cutaway);cutawayRef.current=cutaway;
  const host=useRef(null),context=useRef(null),selectRef=useRef(onSelect);selectRef.current=onSelect;
  useEffect(()=>{
@@ -33,7 +34,8 @@ export function Scene({state,selected,onSelect,label,cameraMemory,cutaway=true,f
   if(ctx.projectId!==state.id){const saved=cameraMemory?.current;if(saved?.projectId===state.id){camera.position.fromArray(saved.position);controls.target.fromArray(saved.target);}else{const box=new THREE.Box3().setFromObject(group),centre=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3()),extent=Math.max(size.x,size.y,size.z,1);controls.target.copy(centre);camera.position.set(centre.x+extent,centre.y+extent*1.3,centre.z+extent*1.5);}ctx.projectId=state.id;}
   ctx.fit=()=>{const box=new THREE.Box3().setFromObject(group),centre=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3()),extent=Math.max(size.x,size.y,size.z,1);controls.target.copy(centre);camera.position.set(centre.x+extent,centre.y+extent*1.3,centre.z+extent*1.5);controls.update();};
  },[state]);
- useEffect(()=>{if(fitRequest)context.current?.fit?.();},[fitRequest]);
+ useEffect(()=>{const delta=zoomRequest-lastZoom.current;lastZoom.current=zoomRequest;const ctx=context.current;if(ctx&&delta){ctx.camera.position.sub(ctx.controls.target).multiplyScalar(Math.pow(.8,delta)).add(ctx.controls.target);ctx.controls.update();}},[zoomRequest]);
+ useEffect(()=>{if(fitRequest!==lastFit.current){lastFit.current=fitRequest;context.current?.fit?.();}},[fitRequest]);
  useEffect(()=>{context.current?.group.traverse(o=>{if(o.material&&o.userData.id)o.material.color.set(o.userData.id===selected?'#ed9679':o.userData.baseColor);});},[selected,state]);
  return <div className="scene" ref={host} role="img" aria-label={label}/>;
 }
