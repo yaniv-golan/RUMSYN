@@ -30,6 +30,11 @@ export function solveQuadrilateral({sides, diagonal, orientation}) {
 export function reconcileSegments({wallId,total,segments,attachments=[]}) {
   dimension(total.value);
   segments.forEach(x=>dimension(x.value));
+  for(const a of attachments){
+    dimension(a.width,'attachment width');
+    if(!Number.isFinite(a.offset)||a.offset<0 || !Number.isFinite(a.offsetWithinSegment??0) || (a.offsetWithinSegment??0)<0)throw new Error('Invalid attachment offset');
+    if(a.segmentId!==undefined&&!segments.some(part=>part.id===a.segmentId))throw new Error('Unknown attachment segment');
+  }
   const sum = segments.reduce((s,x)=>s+x.value,0);
   const residual = sum-total.value;
   if (Math.abs(residual) <= TOLERANCE_CM) return {status:'consistent', residualCm:residual};
@@ -44,7 +49,7 @@ export function reconcileSegments({wallId,total,segments,attachments=[]}) {
       if(a.offset<0 || a.offset+a.width>proposedTotal+TOLERANCE_CM)return true;
       const index=proposedSegments.findIndex(part=>part.id===a.segmentId);
       if(index<0)return false;
-      if(a.width>proposedSegments[index].value+TOLERANCE_CM)return true;
+      if((a.offsetWithinSegment??0)+a.width>proposedSegments[index].value+TOLERANCE_CM)return true;
       const offset=proposedSegments.slice(0,index).reduce((sum,part)=>sum+part.value,0)+(a.offsetWithinSegment??0);
       return a.lockedOffset && Math.abs(offset-a.offset)>TOLERANCE_CM;
     });

@@ -6,7 +6,7 @@ M0: in_progress, qualified local draft; not closed. Local branch codex/m0; check
 
 ## Local results
 
-- 37 meaningful unit cases: bounded solver/commands (10), geometry candidates (6), traceability negatives (21). Revision-aware apply/cancel/undo/redo, stale/replayed preview rejection, positive finite centimeters and provenance are implemented in bounded contracts.
+- 39 meaningful unit cases: bounded solver/commands (12), geometry candidates (6), traceability negatives (21). Revision-aware apply/cancel/undo/redo, stale/replayed preview rejection, positive finite centimeters and provenance are implemented in bounded contracts.
 - Structural inventory and literal-room integrity checks pass. The fixture retains 306 vs 307, unknown angles, 70cm unresolved reference, inward-toward-A opening, beam flush against C, unknown spacing/width and 1cm embedment.
 - Static harness builds. Chromium156 on macOS arm64 executes WASM geometry, browser-generated PDFs, and IndexedDB save/reload/history undo. All source-bound runner reports identify exact source/build files. HTML uses minimal accessible buttons; this is not the editor.
 - Independent PDF checks measure 50.000mm calibration at 1:20 on A4 landscape/A3 portrait; all drawing/text bounds fit, linked70-row schedules wrap/repeat headers, English identifiers/prices and Hebrew short-label extraction survive. Poppler visual review is a separate bounded check. Physical print/mobile viewers remain not_run.

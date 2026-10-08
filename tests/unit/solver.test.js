@@ -69,3 +69,17 @@ test('S05 R012: attachment-breaking repair is unavailable, never offered feasibl
  const before=structuredClone(measured),r=reconcileSegments(measured);
  expect(r.status).toBe('no_allowed_repair');expect(r.choices).toEqual([]);expect(r.unavailable[0]).toMatchObject({target:'total',oldValue:306,newValue:305});expect(r.unavailable[0].reason).toContain('fixed-end');expect(measured).toEqual(before);
 });
+test('S05 R012 manager E08: local offset plus width must fit repaired segment',()=>{
+ const input={wallId:'D',total:{value:306,locked:true},segments:[{id:'solid',value:105,locked:true},{id:'opening',value:100},{id:'tail',value:102,locked:true}],attachments:[{id:'window',segmentId:'opening',offset:114,offsetWithinSegment:9,width:91,lockedOffset:true}]};
+ const before=structuredClone(input),r=reconcileSegments(input);expect(r.status).toBe('no_allowed_repair');expect(r.choices).toEqual([]);expect(r.unavailable[0].target).toBe('opening');expect(input).toEqual(before);
+ expect(()=>reconcileSegments({...input,attachments:[{...input.attachments[0],offset:NaN}]})).toThrow('Invalid attachment offset');
+});
+test('S05 R012: generated local-span boundaries reject infeasible repairs',()=>{
+ for(let offset=0;offset<=9;offset++)for(let width=90;width<=100-offset;width++){
+  const measured={wallId:'synthetic',total:{value:306,locked:true},segments:[{id:'solid',value:105,locked:true},{id:'opening',value:100},{id:'tail',value:102,locked:true}],attachments:[{id:'window',segmentId:'opening',offset:105+offset,offsetWithinSegment:offset,width,lockedOffset:true}]};
+  const r=reconcileSegments(measured);
+  // Independent interval end calculation: repaired opening is [105,204].
+  const fits=105+offset+width<=204;
+  expect(r.choices.length).toBe(fits?1:0);
+ }
+});
