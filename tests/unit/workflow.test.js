@@ -29,8 +29,8 @@ test('M1 R031 manager E02: history cannot undo into a different project identity
  const s=session(),d=JSON.parse(s.serialize());d.history[0].before.id='different-project';expect(()=>CommandSession.reopen(JSON.stringify(d))).toThrow('project identity');
 });
 test('M1 R031 manager E03: successful archive save preserves more than 1000 edits',()=>{
- const s=session();for(let i=0;i<1001;i++)s.apply(s.previewWallLength('wall-A',400+i%2).id);
- const reopened=importProject(exportProject(s));expect(reopened.history.length).toBe(1002);expect(reopened.state.walls[0].length.value).toBe(400);reopened.undo();expect(reopened.state.walls[0].length.value).toBe(401);
+ const s=session();for(let i=0;i<1001;i++)s.apply(s.previewWallLength('wall-A',401-i%2).id);
+ const reopened=importProject(exportProject(s));expect(reopened.history.length).toBe(1002);expect(reopened.state.walls[0].length.value).toBe(401);reopened.undo();expect(reopened.state.walls[0].length.value).toBe(400);
 });
 test('M1 R012: opening height cannot escape the host wall',()=>{const s=session();expect(()=>s.previewOpening({id:'too-high',wallId:'wall-A',width:90,height:250,bottom:0,offset:30,anchor:'start'})).toThrow('height/elevation');expect(s.state.attachments).toEqual([]);});
 test('M1 R027 manager E04: catalog dimensions cannot be silently relabeled after resizing',()=>{

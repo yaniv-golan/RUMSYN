@@ -22,7 +22,7 @@ export function validateState(state) {
   const ids = new Set();
   for (const wall of state.walls) {
     if (typeof wall.id !== 'string' || !wall.id || ids.has(wall.id)) throw new Error('Invalid/duplicate wall ID');
-    ids.add(wall.id);
+    ids.add(wall.id);if(wall.locked!==undefined&&typeof wall.locked!=='boolean')throw new Error('Invalid wall length lock');
     dimension(wall.length.value);
     if (wall.length.unit !== 'cm' || !['entered','derived','inferred','adjusted'].includes(wall.length.source)) throw new Error('Invalid measurement record');
   }
